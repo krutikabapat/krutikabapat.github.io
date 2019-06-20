@@ -7,7 +7,7 @@ permalink: /projects/
 
 Projects on Jupyter Notebook
 ====================
-![](/assets/tf.jpg) 
+![](/assets/tf.jpg) ![](/assets/pandas.png)
 
 <a href="https://github.com/krutikabapat/Tensorflow_basics" target="_blank">**Tensorflow Programs and Tutorials**</a> - This Github repo contains multiple iPython notebooks which serve as tutorials for learning about deploying deep learning and machine learning models. The following topics are covered. 
 - **Inverse Cooking: Recipe Generation from Food Images**: This notebook shows you how to generate the recipe from a given food Image. This work has been recently published in CVPR-2019 (June) (https://arxiv.org/pdf/1812.06164.pdf). The whole workflow is implemented in Pytorch.  
