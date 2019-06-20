@@ -18,8 +18,11 @@ Currently a Research Intern at ROSE Labs,NTU Singapore [ROSE Labs](https://rose.
 ### Experience
 <img src="/assets/opencv.png" width="250">                    
 
-* OpenCV Contributer
-* President Artificial Intelligence/ML club IIIT-Naya Raipur.
+* OpenCV Contributer.  
+* President Artificial Intelligence/ML club IIIT-Naya Raipur.  
+* Winner of Best Project Award at Industry Academia Meet (IAM) IIIT-Naya Raipur on Crowd Counting.
+* Organizer TechNovate IIIT-Naya Raipur.
+
 
 
 ### Teaching
