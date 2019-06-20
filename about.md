@@ -43,11 +43,11 @@ As a former president of AI/ML club at IIIT-Naya Raipur, I've presented/co-prese
 ### Blogs
 
 As a former intern at Big Vision LLC, I have written some of the popular blogs on  Computer Vision and Deep Learning.  
-*[Deep Learning based character classification] (https://www.learnopencv.com/deep-learning-character-classification-using-synthetic-dataset/)
+*[ #1 Deep Learning based character classification] (https://www.learnopencv.com/deep-learning-character-classification-using-synthetic-dataset/)
 
-*[Hough Transform Using OpenCV] (https://www.learnopencv.com/hough-transform-with-opencv-c-python/)
+*[#2 Hough Transform Using OpenCV] (https://www.learnopencv.com/hough-transform-with-opencv-c-python/)
 
-*[Finding center of blob using OpenCV] (https://www.learnopencv.com/tag/cv2-moments/)
+*[#3 Finding center of blob using OpenCV] (https://www.learnopencv.com/tag/cv2-moments/)
 
 ### Books I'd Highly Recommend
 
