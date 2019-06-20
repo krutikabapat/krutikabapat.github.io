@@ -20,7 +20,7 @@ It has been implemented both in Python and cpp using OpenCV. Example video is of
 
 OpenCV based Projects
 ====================
-![](/assets/new.png) 
+<img src="/assets/opencv.png" width="250">                    
 
 - **Shape Matching**: This majorly focuses on matching the shapes in a given image, locate and detect them. Various parameters in the function can be modified to get the results accordingly.   
 
