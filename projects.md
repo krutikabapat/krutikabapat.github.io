@@ -3,30 +3,27 @@ layout: page
 permalink: /projects/
 ---
 
--**I don't update this page as much, so head to my GitHub for the most recent projects**
+-**For the latest updates, please visit my github page**
 
-iPython Tensorflow Notebook Tutorials
+Projects on Jupyter Notebook
 ====================
 ![](/assets/tf.jpg) 
 
-<a href="https://github.com/adeshpande3/Tensorflow-Programs-and-Tutorials" target="_blank">**Tensorflow Programs and Tutorials**</a> - This Github repo contains multiple iPython notebooks which serve as tutorials for learning about deploying deep learning and machine learning models. The following topics are covered. 
-- **Convolutional Neural Networks**: This notebook shows you how to define a simple convolutional network using Tensorflow. We'll discuss how to load in datasets, how to create our network architecture using Tensorflow variables, as well as how to define loss functions and optimizers. 
-- **Generative Adversarial Networks**: This notebook shows you how to create a simple GAN. The basic idea is that you have 2 different networks, a generator network and a discriminator network. The discriminative model has the task of determining whether a given image looks natural (an image from the dataset) or looks like it has been artificially created. The task of the generator is to create natural looking images that are similar to the original data distribution. In this tutorial, we'll look at how to create both models, and the unique process of training them to reach a Nash equilibrium. 
-- **CNN's with Noisy Labels**: This notebook looks at a recent [paper](https://arxiv.org/pdf/1703.08774.pdf) that discusses how convolutional neural networks that are trained on random labels (with some probability) are still able to acheive good accuracy on MNIST. I thought that the paper showed some eye-brow raising results, so I went ahead and tried it out for myself. It was pretty amazing to see that even when training a CNN with random labels 50% of the time, and the correct labels the other 50% of the time, the network was still able to get a 90+% accuracy. 
+<a href="https://github.com/krutikabapat/Tensorflow_basics" target="_blank">**Tensorflow Programs and Tutorials**</a> - This Github repo contains multiple iPython notebooks which serve as tutorials for learning about deploying deep learning and machine learning models. The following topics are covered. 
+- **Inverse Cooking: Recipe Generation from Food Images**: This notebook shows you how to generate the recipe from a given food Image. This work has been recently published in CVPR-2019 (June) (https://arxiv.org/pdf/1812.06164.pdf). The whole workflow is implemented in Pytorch.  
+
+- **Video Panorama**: This notebook shows you how to how to generate a panorama from a video which is captured already.
+It has been implemented both in Python and cpp using OpenCV. Example video is of a mountain area, and the result image is the panorama of the whole view captured in the video.  
+- **Crowd Counting**: This notebook looks at a recent [paper](https://arxiv.org/pdf/1802.10062.pdf) that is based on dilated convolutions to generate feature maps for the images of the crowd and find the number of people in the crowd.The network was detects the crowd with an accuracy of 94%.  
+- **Video Stabilization**: This notebook focuses on stabilizing a video, which has random motions, specificaaly due to capturing of video while standing through mobile phone. After performing video stabilization, the video has o external motions. The implementation is both in Python and cpp.  
 - **And more!**
 
-Hackathons
+OpenCV based Projects
 ====================
-![](/assets/chiro.png) 
+![](/assets/opencv.png) 
 
-<a href="https://github.com/NWChen/Chiro" target="_blank">**Chiro**</a> *Qualcomm HackMobile 2017* - Created a tool that detects and corrects your posture while sitting at a desk. We used convolutional neural networks for the binary classification problem of whether or not a person currently has good or bad posture. We gathered a large dataset of images, and used transfer learning to fine tune a pretrained Inception network. We created a camera streaming web app that sent raw RGB photos to a webserver which passed the image through a saved Keras CNN model, and rendered the results to a single page web app that alerts you when bad posture is detected. 
-
-Sports Data Analysis
-====================
-![](/assets/sports.jpg) 
-
-<a href="https://github.com/adeshpande3/March-Madness-2017/blob/master/March%20Madness%202017.ipynb" target="_blank">**March Madness 2017 Bracket Predictor Model**</a> - This iPython notebook looks at how we can use historical data on NCAA regular season games to develop a model that outputs win probability for 2 given teams facing each other. We can frame this as a supervised learning problem where we can use past game by game results as our labels. Each team is represented by a d-dimensional vector containing information for that team (PPG, Number of Wins, etc) during the given season. The element wise difference between the two teams is inputted into a neural network, where the output is the softmax-bounded probability of the likelihood that Team 1 will come out victorious in the matchup. I also wrote a <a href="https://adeshpande3.github.io/adeshpande3.github.io/Applying-Machine-Learning-to-March-Madness" target="_blank">blog post</a> about predicting the 2017 March Madness tournament. 
-<br><br><a href="https://github.com/adeshpande3/MLB_Win_Predictor/blob/master/BaseballWinPredictor.lua" target="_blank">**MLB Win Predictor Linear Regression Model**</a> - This project looks at how a team's baseball statistics (ERA, Batting Average, RBI, etc), over the course of a season, contribute to their total number of wins. This uses the Torch7 computing framework to develop a linear regression model that takes in a set of 16 features representing traditional baseball statistics and outputs the predicted number of wins for the given season. Given the season statistics for a team, this model can predict a team's win total within 3 games (1.85% error). 
+- **Shape Matching**: This majorly focuses on matching the shapes in a given image, locate and detect them. Various parameters in the function can be modified to get the results accordingly.  
+ 
 
 React Web Apps
 ====================
