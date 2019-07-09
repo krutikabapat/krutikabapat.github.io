@@ -9,7 +9,6 @@ tags: [Blog, Theory]
 icon: icon-html
 ---
 
-
 In this blog post we will be focusing on the working of EfficientNet. We have seen that how CNN can be used for so many different tasks. Also we know that, once we increase the depth of CNNs they can detect the high level features more easily and with greater accuracy. But increasing the **depth (adding more layers to CNN)** has some major problems:-
 
 1. Deeper networks are more difficult to train due to the vanishing gradient problem. Although several techniques, such as skip connections and batch normalization alleviate the training problem, the accuracy gain of very deep network diminishes.  
@@ -25,7 +24,7 @@ In particular, the main question is if there is a principled method to scale upC
 It still remains an open question of how to effectively scale a ConvNet to achieve better efficiency and accuracy. This paper  work systematically and empirically studies ConvNet scaling for all three dimensions of network width, depth, and resolutions.  
 
 
-# **What are scaling methods?**  
+## What are scaling methods?
 
 **1. Conventional scaling methods:-** These methods mainly focus on increasing one dimension of network i.e, either width, depth, or resolution and the try to have a balance between the efficiency and accuracy.  
 
@@ -37,8 +36,9 @@ It still remains an open question of how to effectively scale a ConvNet to achie
 The above image (a)shows the baseline architecture, (b) width scaling, (c) depth scaling, (d) resolution scaling, (e) compound scaling.  
 
 
-# **Scaling Dimensions**  
-Conventional methods mostly scale ConvNets in one of these dimensions i.e either depth wise, width wise or resoulution wise.  
+## Scaling Dimensions
+
+Conventional methods mostly scale ConvNets in one of these dimensions i.e either depth wise, width wise or resoulution wise. 
 
 **1. Depth wise scaling(d)**: Scaling network depth is the most common way used by many ConvNets. The intuition is that deeper ConvNet can capture richer and more complex features, and generalize well on new tasks. However, deeper networks are also more difficult to train due to the vanishing gradient problem. Although several techniques, such as skip connections and batch normalization alleviate the training problem, the accuracy gain of very deep network diminishes for example, ResNet-1000 has similar accuracy as ResNet-101 even though it has much more layers.  
 
@@ -50,31 +50,27 @@ Higher resolutions, such as 600x600, are also widely used in object detection Co
 
 From the experiments, two conclusions can be drawn:-
 
-**Conclusion 1 –** Scaling up any dimension of network width, depth, or resolution improves accuracy, but the accuracy gain diminishes for bigger models.  
+## Conclusion
+
+1. Scaling up any dimension of network width, depth, or resolution improves accuracy, but the accuracy gain diminishes for bigger models.  
 
 ![png](https://raw.githubusercontent.com/krutikabapat/krutikabapat.github.io/master/assets/saturation.png)
 
 The above image shows scaling Up a Baseline Model with Different Network Width (w), Depth (d), and Resolution (r) Coefficients. From the above, we can observe that all the models saturate in terms of accuracy when scaling is applied in only one dimension.  
 
+2. In order to pursue better accuracy and efficiency, it is critical to balance all dimensions of network width, depth, and resolution during ConvNet scaling.  
 
-**Conclusion 2 –** In order to pursue better accuracy and efficiency, it is critical to balance all dimensions of network width, depth, and resolution during ConvNet scaling.  
-
-
-# **Working Architecture of EffcientNet:**  
+## Working Architecture of EffcientNet:
 
 They use compund scaling in which they use a compound coefficient φ to uniformly scale network width, depth, and resolution in a principled way where α, β, γ are constants that can be determined by a small grid search.  
-
 
 ![png](https://raw.githubusercontent.com/krutikabapat/krutikabapat.github.io/master/assets/equation.png)
 
 φ is a user-specified coefficient that controls how many more resources are available for model scaling, while α, β, γ specify how to assign these extra resources to network width, depth, and resolution respectively.  
 
-
 ![png](https://raw.githubusercontent.com/krutikabapat/krutikabapat.github.io/master/assets/result.png)
 
-
-
-# **References**  
+## References
 
 1.  https://arxiv.org/pdf/1905.11946.pdf   
 2.  https://www.semanticscholar.org/paper/Birdsnap%3A-Large-Scale-Fine-Grained-Visual-of-Birds-Berg-Liu/4965eec4d6fd69e9bff12dce7d9d84897433cc2a.  
