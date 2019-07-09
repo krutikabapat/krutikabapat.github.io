@@ -31,7 +31,7 @@ It still remains an open question of how to effectively scale a ConvNet to achie
 
 **2. Compound scaling methods:-** These methods focus on increasing all the dimensions of the network i.e width, depth and resolution in a proportionate manner in order to keep a balance and improve the performance of the network.  
 
-![png](https://raw.githubusercontent.com/krutikabapat/krutikabapat.github.io/master/_assets/scaling.png)
+![png](https://raw.githubusercontent.com/krutikabapat/krutikabapat.github.io/master/assets/scaling.png)
 
 
 The above image (a)shows the baseline architecture, (b) width scaling, (c) depth scaling, (d) resolution scaling, (e) compound scaling.  
@@ -52,7 +52,7 @@ From the experiments, two conclusions can be drawn:-
 
 **Conclusionn 1 –** Scaling up any dimension of network width, depth, or resolution improves accuracy, but the accuracy gain diminishes for bigger models.  
 
-![png](https://raw.githubusercontent.com/krutikabapat/krutikabapat.github.io/master/_assets/saturation.png)
+![png](https://raw.githubusercontent.com/krutikabapat/krutikabapat.github.io/master/assets/saturation.png)
 
 The above image shows scaling Up a Baseline Model with Different Network Width (w), Depth (d), and Resolution (r) Coefficients. From the above, we can observe that all the models saturate in terms of accuracy when scaling is applied in only one dimension.  
 
@@ -65,12 +65,12 @@ The above image shows scaling Up a Baseline Model with Different Network Width (
 They use compund scaling in which they use a compound coefficient φ to uniformly scale network width, depth, and resolution in a principled way where α, β, γ are constants that can be determined by a small grid search.  
 
 
-![png](https://raw.githubusercontent.com/krutikabapat/krutikabapat.github.io/master/_assets/equation.png)
+![png](https://raw.githubusercontent.com/krutikabapat/krutikabapat.github.io/master/assets/equation.png)
 
 φ is a user-specified coefficient that controls how many more resources are available for model scaling, while α, β, γ specify how to assign these extra resources to network width, depth, and resolution respectively.  
 
 
-![png](https://raw.githubusercontent.com/krutikabapat/krutikabapat.github.io/master/_assets/result.png)
+![png](https://raw.githubusercontent.com/krutikabapat/krutikabapat.github.io/master/assets/result.png)
 
 
 
