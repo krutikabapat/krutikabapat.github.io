@@ -24,7 +24,7 @@ In particular, the main question is if there is a principled method to scale upC
 It still remains an open question of how to effectively scale a ConvNet to achieve better efficiency and accuracy. This paper  work systematically and empirically studies ConvNet scaling for all three dimensions of network width, depth, and resolutions.  
 
 
-# What are scaling methods?
+## What are scaling methods?
 
 **1. Conventional scaling methods:-** These methods mainly focus on increasing one dimension of network i.e, either width, depth, or resolution and the try to have a balance between the efficiency and accuracy.  
 
@@ -36,7 +36,7 @@ It still remains an open question of how to effectively scale a ConvNet to achie
 The above image (a)shows the baseline architecture, (b) width scaling, (c) depth scaling, (d) resolution scaling, (e) compound scaling.  
 
 
-# Scaling Dimensions
+## Scaling Dimensions
 
 Conventional methods mostly scale ConvNets in one of these dimensions i.e either depth wise, width wise or resoulution wise. 
 
@@ -50,7 +50,7 @@ Higher resolutions, such as 600x600, are also widely used in object detection Co
 
 From the experiments, two conclusions can be drawn:-
 
-# Conclusion
+## Conclusion
 
 1. Scaling up any dimension of network width, depth, or resolution improves accuracy, but the accuracy gain diminishes for bigger models.  
 
@@ -60,7 +60,7 @@ The above image shows scaling Up a Baseline Model with Different Network Width (
 
 2. In order to pursue better accuracy and efficiency, it is critical to balance all dimensions of network width, depth, and resolution during ConvNet scaling.  
 
-# Working Architecture of EffcientNet:
+## Working Architecture of EffcientNet:
 
 They use compund scaling in which they use a compound coefficient φ to uniformly scale network width, depth, and resolution in a principled way where α, β, γ are constants that can be determined by a small grid search.  
 
@@ -70,7 +70,7 @@ They use compund scaling in which they use a compound coefficient φ to uniforml
 
 ![png](https://raw.githubusercontent.com/krutikabapat/krutikabapat.github.io/master/assets/result.png)
 
-# References
+## References
 
 1.  https://arxiv.org/pdf/1905.11946.pdf   
 2.  https://www.semanticscholar.org/paper/Birdsnap%3A-Large-Scale-Fine-Grained-Visual-of-Birds-Berg-Liu/4965eec4d6fd69e9bff12dce7d9d84897433cc2a.  
