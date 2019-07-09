@@ -18,7 +18,7 @@ In this blog post we will be focusing on the working of EfficientNet. We have se
 
 Also, we know that increasing the depth (number of layers) in CNN increases the number of parameteres by a large amount.The image below shows the comparison of number of parameters on ImageNet by different networks and EfficientNet.
 
-![png](https://raw.githubusercontent.com/krutikabapat/krutikabapat.github.io/master/_assets/efficient-netwrok.png)
+![png](https://raw.githubusercontent.com/krutikabapat/krutikabapat.github.io/master/assets/efficient-netwrok.png)
 
 In particular, the main question is if there is a principled method to scale upConvNets that can achieve better accuracy and efficiency? Study shows that it is critical to balance all dimensions of network width/depth/resolution, and surprisingly such balance can be achieved by simply scaling each of them with constant ratio. Based on this observation, a simple yet effective compound scaling method is proposed. Unlike conventional practice that arbitrary scales these factors, this method uniformly scales network width, depth, and resolution with a set of fixed scaling coefficients.  
 
