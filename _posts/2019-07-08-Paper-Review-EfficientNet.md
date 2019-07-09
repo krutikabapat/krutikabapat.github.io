@@ -25,7 +25,7 @@ In particular, the main question is if there is a principled method to scale upC
 It still remains an open question of how to effectively scale a ConvNet to achieve better efficiency and accuracy. This paper  work systematically and empirically studies ConvNet scaling for all three dimensions of network width, depth, and resolutions.  
 
 
-**What are scaling methods?**  
+# **What are scaling methods?**  
 
 **1. Conventional scaling methods:-** These methods mainly focus on increasing one dimension of network i.e, either width, depth, or resolution and the try to have a balance between the efficiency and accuracy.  
 
@@ -37,7 +37,7 @@ It still remains an open question of how to effectively scale a ConvNet to achie
 The above image (a)shows the baseline architecture, (b) width scaling, (c) depth scaling, (d) resolution scaling, (e) compound scaling.  
 
 
-**Scaling Dimensions**  
+# **Scaling Dimensions**  
 Conventional methods mostly scale ConvNets in one of these dimensions i.e either depth wise, width wise or resoulution wise.  
 
 **1. Depth wise scaling(d)**: Scaling network depth is the most common way used by many ConvNets. The intuition is that deeper ConvNet can capture richer and more complex features, and generalize well on new tasks. However, deeper networks are also more difficult to train due to the vanishing gradient problem. Although several techniques, such as skip connections and batch normalization alleviate the training problem, the accuracy gain of very deep network diminishes for example, ResNet-1000 has similar accuracy as ResNet-101 even though it has much more layers.  
