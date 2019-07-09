@@ -31,7 +31,7 @@ It still remains an open question of how to effectively scale a ConvNet to achie
 
 **2. Compound scaling methods:-** These methods focus on increasing all the dimensions of the network i.e width, depth and resolution in a proportionate manner in order to keep a balance and improve the performance of the network.  
 
-![png](https://raw.githubusercontent.com/krutikabapat/krutikabapat.github.io/master/assets/scaling.png)
+![png](https://raw.githubusercontent.com/krutikabapat/krutikabapat.github.io/master/assets/param.png)
 
 
 The above image (a)shows the baseline architecture, (b) width scaling, (c) depth scaling, (d) resolution scaling, (e) compound scaling.  
