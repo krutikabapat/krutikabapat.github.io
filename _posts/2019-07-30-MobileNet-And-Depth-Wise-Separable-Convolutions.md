@@ -26,7 +26,6 @@ To overcome these advantages, Google proposed two networks namely MobileNet and 
 
 ## Simple Convolutions:
 Suppose, we have input data of size PxPxM, where PxP is the image width and image height and M is the number of channels. Also suppose we have N kernels of size KxKxM. After convolution operation is done, the output size will be RxRxN where R is the output image width and height of the image.
-
 ![png](https://raw.githubusercontent.com/krutikabapat/krutikabapat.github.io/master/assets/simple.png)
 
 The number of operations performed per convolution will be KxKxM, which is the size of the filter itself.
