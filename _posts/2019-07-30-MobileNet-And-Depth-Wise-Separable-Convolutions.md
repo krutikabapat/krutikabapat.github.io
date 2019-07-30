@@ -60,8 +60,7 @@ Total time complexity for Depth separable convolutions is sum of computations re
 
 Total complexity for standard convolutions is NxPxPxRxRxM. The chart below shows the comparison in terms of computations between the two types of convolutions.
 ![png](https://raw.githubusercontent.com/krutikabapat/krutikabapat.github.io/master/assets/comparisoncomplexity.png)  
-From the above we can find that depth wise convolution network performs 100 times lesser multiplications as compared to standard convolutions.
-
+From the below chart we can find that depth wise convolution network performs 100 times lesser multiplications as compared to standard convolutions.
 ## MobileNet v1:
 MobileNets are based on a streamlined architecture that uses depthwise separable convolutions to build light weight deep
 neural networks.In many real world applications such as robotics, self-driving car and augmented reality, the recognition tasks need to be carried out in a timely fashion on a computationally limited platform. This paper describes an efficient network architecture and a set of two hyper-parameters in order to build very small, low latency models that can be easily matched to the design requirements for mobile and embedded vision applications. MobileNet released by Google, is majorly used for mobile applications. The following figure shows the comparison between different netwroks and how MobileNet outperforms it using depth wise separable convolutions.
