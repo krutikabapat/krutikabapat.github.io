@@ -12,22 +12,19 @@ icon: icon-html
 
 In this blog post we will be focusing on MobileNet v1 using Separable Convolutions. Also we will focus on the differences between normal convolutions and separable convolutions and differences between their memory consumptions.
 
-There are two types of CNN:-
+There are basically two types of CNN:
 
 1. Simple Convolutional neural netwroks
 2. Depth wise separable convolutional networks
 
-In most of the cases we use simple convolutional networks, but in wide range of cases we require to deploy them into mobile applications, for which we need to reduce the computations.
-
-There are majorly two dis-advantages of simple convolutional networks:-
+In most of the cases we use simple convolutional networks, but in wide range of cases we require to deploy them into mobile applications, for which we need to reduce the computations. There are majorly two dis-advantages of simple convolutional networks:
 
 1. It contains much more number of parameters, which increases overfitting in most of the cases.
 2. They are computationally expensive because of large number of computations and hence cannot be used for mobile applications.
 
-To overcome these advantages, Google proposed two networks namely MobileNet and Xception. In this blog, we will focus on the type of convolutions used in MobileNetv1 i.e depth wise separable convolutional networks.
+To overcome these advantages, Google proposed two networks namely MobileNet and Xception. In this blog, we will focus on the type of convolutions used in MobileNetv1 i.e depth wise separable convolutional networks. First, we will find how computationally expensive simple convolutional networks are and then move ahead.
 
-First, we will find how computationally expensive simple convolutional networks are:-
-
+## Simple Convolutions
 Suppose, we have input data of size PxPxM, where PxP is the image width and image height and M is the number of channels. Also suppose we have N kernels of size KxKxM. After convolution operation is done, the output size will be RxRxN where R is the output image width and height of the image.
 
 
