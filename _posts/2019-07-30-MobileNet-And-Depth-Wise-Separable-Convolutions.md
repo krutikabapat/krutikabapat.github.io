@@ -59,7 +59,7 @@ Since the filter is slided  RxR times, total number of multiplications required 
 Total time complexity for Depth separable convolutions is sum of computations required in depth wise and point wise convolutions which is equal to MxPxPx(RxR+N)
 
 Total complexity for standard convolutions is NxPxPxRxRxM. The chart below shows the comparison in terms of computations between the two types of convolutions.
-![png](https://raw.githubusercontent.com/krutikabapat/krutikabapat.github.io/master/assets/comparisoncomplexity.png)
+![png](https://raw.githubusercontent.com/krutikabapat/krutikabapat.github.io/master/assets/comparisoncomplexity.png)  
 From the above we can find that depth wise convolution network performs 100 times lesser multiplications as compared to standard convolutions.
 
 ## MobileNet v1:
