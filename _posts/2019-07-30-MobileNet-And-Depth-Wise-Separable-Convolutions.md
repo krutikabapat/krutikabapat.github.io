@@ -53,14 +53,13 @@ In point-wise operation, a 1 × 1 convolution operation is applied on the M chan
 ![png](https://raw.githubusercontent.com/krutikabapat/krutikabapat.github.io/master/assets/point.png)
 
 A single point-wise convolution require 1xM operations
-Since the filter is slided  PxP times, total number of multiplications is MxPxPxN.
+Since the filter is slided  RxR times, total number of multiplications required is (1xM)*(RxR) = MxRxRxN.
 
 
-Total time complexity for Depth separable convolutions is sum of computations required in depth wise and point wise convolutions.
-MxPxPx(RxR + N)
+Total time complexity for Depth separable convolutions is sum of computations required in depth wise and point wise convolutions which is equal to MxPxPx(RxR+N)
 
-Total complexity for standard convolutions is NxPxPxRxRxM.
-
+Total complexity for standard convolutions is NxPxPxRxRxM. The chart below shows the comparison in terms of computations between the two types of convolutions.
+![png](https://raw.githubusercontent.com/krutikabapat/krutikabapat.github.io/master/assets/comparisoncomplexity.png)
 From the above we can find that depth wise convolution network performs 100 times lesser multiplications as compared to standard convolutions.
 
 ## MobileNet v1:
