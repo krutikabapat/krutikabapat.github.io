@@ -32,7 +32,7 @@ The number of operations performed per convolution will be KxKxM, which is the s
 Also, the total number of operations is (Number of operations per convolution)* (RxRxN) = (KxKxM)*(RxRxN).
 
 ## Depth Wise Separable Convolutions:
-It has two major components. The first one is Depth-wise convolution and the second one is Point-wise convolution. We will look into each of them one by one.
+It has two major components. The first one is Depth-wise convolution and the second one is Point-wise convolution. We will look into each of them one by one. It is like divide and conquer policy which reduces the cost of computations a lot.
 
 ## 1. Depth-wise convolution
 
