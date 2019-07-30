@@ -24,31 +24,22 @@ In most of the cases we use simple convolutional networks, but in wide range of 
 
 To overcome these advantages, Google proposed two networks namely MobileNet and Xception. In this blog, we will focus on the type of convolutions used in MobileNetv1 i.e depth wise separable convolutional networks. First, we will find how computationally expensive simple convolutional networks are and then move ahead.
 
-## Simple Convolutions
+## Simple Convolutions:
 Suppose, we have input data of size PxPxM, where PxP is the image width and image height and M is the number of channels. Also suppose we have N kernels of size KxKxM. After convolution operation is done, the output size will be RxRxN where R is the output image width and height of the image.
-
-
-
-
-
+![png](https://raw.githubusercontent.com/krutikabapat/krutikabapat.github.io/master/assets/simple.png)
 
 The number of operations performed per convolution will be KxKxM, which is the size of the filter itself.
-Total number of operations is (Number of operations per convolution)* (RxRxN) = (KxKxM)*(RxRxN).
+Also, the total number of operations is (Number of operations per convolution)* (RxRxN) = (KxKxM)*(RxRxN).
 
-Depth Wise Separable Convolutions:- It has two major components. The first one is Depth-wise convolution and the second one is Point-wise convolution.
+## Depth Wise Separable Convolutions:
+It has two major components. The first one is Depth-wise convolution and the second one is Point-wise convolution. We will look into each of them one by one.
 
-1. Depth-wise convolution
+# 1. Depth-wise convolution
 
 In this type, convolution is applied to a single channel at a time and not like the simple convolutions in which it is done for all the channels together.
 So here for each convolution,the kernel used is of size K x K x 1. If the number of channels in input image is M, then M such kernels will be used. The output size will be of size R x R x M.
 
-
-
-
-
-
-
-
+![png](https://raw.githubusercontent.com/krutikabapat/krutikabapat.github.io/master/assets/depth.png)
 
 
 A single convolution would require KxK operations.
@@ -56,9 +47,11 @@ Since the filter is slided R x R x M, times total cost of operation is RxRxMxKxK
 
 
 
-2. Point-wise convolution
+# 2. Point-wise convolution
 
 In point-wise operation, a 1 × 1 convolution operation is applied on the M channels. So the filter size for this operation will be 1 x 1 x M. Say we use N such filters, the output size becomes R x R x N.
+![png](https://raw.githubusercontent.com/krutikabapat/krutikabapat.github.io/master/assets/point.png)
+
 A single point-wise convolution require 1xM operations
 Since the filter is slided  PxP times, total number of multiplications is MxPxPxN.
 
