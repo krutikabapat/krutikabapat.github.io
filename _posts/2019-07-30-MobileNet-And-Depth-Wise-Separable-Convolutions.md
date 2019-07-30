@@ -34,7 +34,7 @@ Also, the total number of operations is (Number of operations per convolution)* 
 ## Depth Wise Separable Convolutions:
 It has two major components. The first one is Depth-wise convolution and the second one is Point-wise convolution. We will look into each of them one by one.
 
-# 1. Depth-wise convolution
+## 1. Depth-wise convolution
 
 In this type, convolution is applied to a single channel at a time and not like the simple convolutions in which it is done for all the channels together.
 So here for each convolution,the kernel used is of size K x K x 1. If the number of channels in input image is M, then M such kernels will be used. The output size will be of size R x R x M.
@@ -47,14 +47,13 @@ Since the filter is slided R x R x M, times total cost of operation is RxRxMxKxK
 
 
 
-# 2. Point-wise convolution
+## 2. Point-wise convolution
 
 In point-wise operation, a 1 × 1 convolution operation is applied on the M channels. So the filter size for this operation will be 1 x 1 x M. Say we use N such filters, the output size becomes R x R x N.
 ![png](https://raw.githubusercontent.com/krutikabapat/krutikabapat.github.io/master/assets/point.png)
 
 A single point-wise convolution require 1xM operations
 Since the filter is slided  PxP times, total number of multiplications is MxPxPxN.
-
 
 
 Total time complexity for Depth separable convolutions is sum of computations required in depth wise and point wise convolutions.
@@ -64,19 +63,18 @@ Total complexity for standard convolutions is NxPxPxRxRxM.
 
 From the above we can find that depth wise convolution network performs 100 times lesser multiplications as compared to standard convolutions.
 
-MobileNet v1:
+# MobileNet v1:
+MobileNets are based on a streamlined architecture that uses depthwise separable convolutions to build light weight deep
+neural networks.In many real world applications such as robotics, self-driving car and augmented reality, the recognition tasks need to be carried out in a timely fashion on a computationally limited platform. This paper describes an efficient network architecture and a set of two hyper-parameters in order to build very small, low latency models that can be easily matched to the design requirements for mobile and embedded vision applications. MobileNet released by Google, is majorly used for mobile applications. The following figure shows the comparison between different netwroks and how MobileNet outperforms it using depth wise separable convolutions.
 
+![png](https://raw.githubusercontent.com/krutikabapat/krutikabapat.github.io/master/assets/general.png)
 
+# Architecture:
+![png](https://raw.githubusercontent.com/krutikabapat/krutikabapat.github.io/master/assets/mobilenetnetwork.png)
 
+# Comparison of the performance between MobileNet and other networks:
+![png](https://raw.githubusercontent.com/krutikabapat/krutikabapat.github.io/master/assets/comparisonmobilenet.png)
 
-
-
-
-
-
-
-
-MobileNet released by Google, is majorly used for mobile applications. The following figure shows the comparison between different netwroks and how MobileNet outperforms it.
 
 
 
