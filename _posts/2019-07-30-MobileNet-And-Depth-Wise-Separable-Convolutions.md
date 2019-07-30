@@ -26,6 +26,7 @@ To overcome these advantages, Google proposed two networks namely MobileNet and 
 
 ## Simple Convolutions:
 Suppose, we have input data of size PxPxM, where PxP is the image width and image height and M is the number of channels. Also suppose we have N kernels of size KxKxM. After convolution operation is done, the output size will be RxRxN where R is the output image width and height of the image.
+
 ![png](https://raw.githubusercontent.com/krutikabapat/krutikabapat.github.io/master/assets/simple.png)
 
 The number of operations performed per convolution will be KxKxM, which is the size of the filter itself.
@@ -63,14 +64,14 @@ Total complexity for standard convolutions is NxPxPxRxRxM.
 
 From the above we can find that depth wise convolution network performs 100 times lesser multiplications as compared to standard convolutions.
 
-# MobileNet v1:
+## MobileNet v1:
 MobileNets are based on a streamlined architecture that uses depthwise separable convolutions to build light weight deep
 neural networks.In many real world applications such as robotics, self-driving car and augmented reality, the recognition tasks need to be carried out in a timely fashion on a computationally limited platform. This paper describes an efficient network architecture and a set of two hyper-parameters in order to build very small, low latency models that can be easily matched to the design requirements for mobile and embedded vision applications. MobileNet released by Google, is majorly used for mobile applications. The following figure shows the comparison between different netwroks and how MobileNet outperforms it using depth wise separable convolutions.
 
 ![png](https://raw.githubusercontent.com/krutikabapat/krutikabapat.github.io/master/assets/general.png)
 
 # Architecture:
-![png](https://raw.githubusercontent.com/krutikabapat/krutikabapat.github.io/master/assets/mobilenetnetwork.png)
+![png](https://raw.githubusercontent.com/krutikabapat/krutikabapat.github.io/master/assets/Mobilenetnetwork.png)
 
 # Comparison of the performance between MobileNet and other networks:
 ![png](https://raw.githubusercontent.com/krutikabapat/krutikabapat.github.io/master/assets/comparisonmobilenet.png)
