@@ -76,7 +76,7 @@ neural networks.In many real world applications such as robotics, self-driving c
 We can see that MobileNet is way much better than other models, in terms of number of parameters, accuracy and in terms of number of computations required. MobileNet outperforms in every aspect.
 
 ## References:
-1. https://arxiv.org/pdf/1704.04861.pdf
+1. [Paper](https://arxiv.org/pdf/1704.04861.pdf)
 
 
 
