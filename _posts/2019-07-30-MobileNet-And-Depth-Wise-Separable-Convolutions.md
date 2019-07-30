@@ -26,6 +26,7 @@ To overcome these advantages, Google proposed two networks namely MobileNet and 
 
 ## Simple Convolutions:
 Suppose, we have input data of size PxPxM, where PxP is the image width and image height and M is the number of channels. Also suppose we have N kernels of size KxKxM. After convolution operation is done, the output size will be RxRxN where R is the output image width and height of the image.
+
 ![png](https://raw.githubusercontent.com/krutikabapat/krutikabapat.github.io/master/assets/simple.png)
 
 The number of operations performed per convolution will be KxKxM, which is the size of the filter itself.
@@ -59,6 +60,7 @@ Since the filter is slided  RxR times, total number of multiplications required 
 Total time complexity for Depth separable convolutions is sum of computations required in depth wise and point wise convolutions which is equal to MxPxPx(RxR+N)
 
 Total complexity for standard convolutions is NxPxPxRxRxM. The chart below shows the comparison in terms of computations between the two types of convolutions.
+
 ![png](https://raw.githubusercontent.com/krutikabapat/krutikabapat.github.io/master/assets/comparisoncomplexity.png)  
 From the below chart we can find that depth wise convolution network performs 100 times lesser multiplications as compared to standard convolutions.
 ## MobileNet v1:
@@ -76,7 +78,7 @@ neural networks.In many real world applications such as robotics, self-driving c
 We can see that MobileNet is way much better than other models, in terms of number of parameters, accuracy and in terms of number of computations required. MobileNet outperforms in every aspect.
 
 ## References:
-1. [Paper](https://arxiv.org/pdf/1704.04861.pdf)
+1. [MobileNet](https://arxiv.org/pdf/1704.04861.pdf)
 
 
 
