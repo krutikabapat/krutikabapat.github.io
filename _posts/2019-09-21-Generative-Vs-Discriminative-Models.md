@@ -53,5 +53,5 @@ We can also conclude that the lower layers of deep neural networks can be called
 
 
 ## References
-1. https://ai.stanford.edu/~ang/papers/nips01-discriminativegenerative.pdf
-2. http://robotics.stanford.edu/~ang/papers/nips01-discriminativegenerative.pdf
+1.[generative vs discriminative](https://ai.stanford.edu/~ang/papers/nips01-discriminativegenerative.pdf)
+2.[type of models](http://robotics.stanford.edu/~ang/papers/nips01-discriminativegenerative.pdf)
