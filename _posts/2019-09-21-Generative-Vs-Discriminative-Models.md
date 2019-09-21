@@ -49,7 +49,7 @@ Discriminative machine learning is training a model to distinguish the correct o
 
 We can also conclude that the lower layers of deep neural networks can be called as generative and the upper layers often as discriminative. Generative models often outperform discriminative models on smaller datasets because their generative assumptions place some non-restriction on your model that prevent overfitting. For example, if we compare Naive Bayes vs. Logistic Regression, the Naive Bayes assumption is of course rarely satisfied, so logistic regression will tend to outperform Naive Bayes as your dataset grows (since it can capture dependencies that Naive Bayes can't). But we have only a small data set, logistic regression may pick up on false patterns that don't really exist, so the Naive Bayes acts as a kind of regularizer on our model that prevents overfitting.
 a
-![png](https://raw.githubusercontent.com/krutikabapat/krutikabapat.github.io/master/assets/representaion_model.png)
+![png](https://raw.githubusercontent.com/krutikabapat/krutikabapat.github.io/master/assets/representation_model.png)
 
 
 ## References
