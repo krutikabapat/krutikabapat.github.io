@@ -1,0 +1,19 @@
+---
+layout: post
+title: "Generative-Vs-Discriminative-Models"
+date: 2019-09-21
+desc: "This blog post talks about the difference between Generative and Discriminative Models."
+keywords: "Blog, Genrative, Discriminative"
+categories: [Blog, Theory]
+tags: [Blog, Theory]
+icon: icon-html
+---
+
+
+
+In this blog post we will be learning about Generative and Discriminiative models. Suppose that we have one model which can
+learn things in-depth and throughly, and we have another model which can learn to identify only the differences between the 
+things it sees.
+
+In technical terms, a Genrative model learns the joint probability distribution p(x,y) and a Discriminative model learns the 
+conditional probability distribution p(x|y) using Byes theorem. 
