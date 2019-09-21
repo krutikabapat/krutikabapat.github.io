@@ -16,7 +16,8 @@ learn things in-depth and thoroughly and we have another model which can learn t
 things it sees. 
 
 For example suppose we have model A which can learn features of fruits such as color, texture, shape etc and 
-other model B learns only the features which help to easily classify them like their color.
+other model B learns only the features which help to easily classify them like their color. Model A is a generative model and
+model B is a discriminative model.
 
 The geneartive models learn the joint probability distribution p(x,y) and a discriminative model basically learns
 the conditional probability distribution p(y|x).A generative algorithm models how the data was generated in order to categorize a signal whereas a discriminative model does not care about how the data was generated, it simply categorizes a given signal.
