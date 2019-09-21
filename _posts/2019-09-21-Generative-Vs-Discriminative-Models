@@ -3,7 +3,7 @@ layout: post
 title: "Generative-Vs-Discriminative-Models"
 date: 2019-09-21
 desc: "This blog post talks about the difference between Generative and Discriminative Models."
-keywords: "Blog, Genrative, Discriminative"
+keywords: "Blog, Generative, Discriminative"
 categories: [Blog, Theory]
 tags: [Blog, Theory]
 icon: icon-html
@@ -12,8 +12,21 @@ icon: icon-html
 
 
 In this blog post we will be learning about Generative and Discriminiative models. Suppose that we have one model which can
-learn things in-depth and throughly, and we have another model which can learn to identify only the differences between the 
+learn things in-depth and throughly and we have another model which can learn to identify only the differences between the 
 things it sees.
 
-In technical terms, a Genrative model learns the joint probability distribution p(x,y) and a Discriminative model learns the 
-conditional probability distribution p(x|y) using Byes theorem. 
+In technical terms, a Generative model learns the joint probability distribution p(x,y) and a Discriminative model learns the 
+conditional probability distribution p(x|y) using Bayes theorem. For example, if you have input data x and you want to classify
+it into y labels. The geneartive models learn the joint probability distribution p(x,y) and a discriminative model basically learns
+the conditional probability distribution p(y|x).
+
+Some of the examples of Generative classifiers are:-
+1. Naïve Bayes
+2. Hidden Markov Models (HMM)
+3. Markov random fields
+
+Some of the examples of Discriminative Classifiers are:-
+1. Conditional Random Fields (CRF)s
+2. Logistic regression
+3. Traditional neural networks
+4. Nearest neighbour
