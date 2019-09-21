@@ -21,6 +21,9 @@ other model B learns only the features which help to easily classify them like t
 The geneartive models learn the joint probability distribution p(x,y) and a discriminative model basically learns
 the conditional probability distribution p(y|x).A generative algorithm models how the data was generated in order to categorize a signal whereas a discriminative model does not care about how the data was generated, it simply categorizes a given signal.
 
+![png](https://raw.githubusercontent.com/krutikabapat/krutikabapat.github.io/master/assets/difference_model.png)
+
+
 ## Generative Models
 In technical terms, a Generative model learns the joint probability distribution p(x,y). For example, if you have input data x and you want to classify it into y labels. Since generative models model each class separately they can be trained on an individual class basis. Some of the examples include Naïve Bayes, Hidden Markov Models (HMM), Markov random fields
 
@@ -28,6 +31,9 @@ In technical terms, a Generative model learns the joint probability distribution
 A Discriminative model learns the conditional probability distribution p(x|y) using Bayes theorem. The main aim of dicriminative models is to distinguish between classes, it needs to be trained on a single traning set with examples of all of them. Some of the discriminative models include Conditional Random Fields (CRF)s, Logistic regression, Traditional neural networks and Nearest neighbour. These models are more complex than generative models.
 
 Discriminative machine learning is training a model to distinguish the correct output among possible output choices, given something about the data. This is typically done by learning model parameters that maximize the conditional probability P(Y/X).
+
+
+![png](https://raw.githubusercontent.com/krutikabapat/krutikabapat.github.io/master/assets/type_model.png)
 
 ## Advantages and Disadvantages of Generative and Discriminative Models
 
