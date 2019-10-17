@@ -1,0 +1,57 @@
+---
+layout: post
+title: "Swish-Vs-Mish-Latest-Activation-Functions"
+date: 2019-17-10
+desc: "This blog post talks about the difference between Swish and Mish Activation Functions."
+keywords: "Blog, Mish, Swish, Activation Function"
+categories: [Blog, Theory]
+tags: [Blog, Theory]
+icon: icon-html
+---
+
+
+In this blog post we will be learning about two of the very recent activation functions Mish and Swift. Some of the activation
+functions which are already in the buzz. Relu, Leaky-relu, sigmoid, tanh are common among them. These days two of the activation 
+functions Mish and Swift have outperformed many of the previous results by Relu and Leaky Relu specifically.
+
+Let us move on and get more into it!!
+
+##ReLU
+
+The major purpose of activation function in neural networks is to introduce non-linearity between output and the input.
+They basically decide when to fire a neuron and when to not. If we do not use activation fucntion, there will be a linear
+relationship between input and output variables and it would not be able to solve much complex problems as a linear relationship has some limitations.
+
+The main objective of introducing a activation function is to introduce non-linearity which should be able to solve complex problems such as Natural Language Processing, Classification, Recognition, Segmentation etc.  
+
+ReLU is rectified linear unit activation function. It is defined as f(x) = max(x,0) for x>0, 0 otherwise.
+
+![png](https://raw.githubusercontent.com/krutikabapat/krutikabapat.github.io/master/assets/ReLU.png)
+
+
+From the above figure we can see that ReLU has 0 gradient for all x<0, it means that it would not activate all neurons at a time and very few neurons will be activated making it sparse and thus cost efficient and easy for computation.
+
+Advantages of ReLU:-
+
+1. We can observe that for x>0 ReLu has constant gradient, which reduces the chance of vanishing gradients at any point of time. This property also results in faster learning.
+
+2. For all x<=0 the gradient is zero and hence less number of neurons will be fired which will reduce overfitting and is also
+cost efficient.
+
+3. Better convergence performance as compared to other activation fucntions.
+
+Disadvantages of ReLU:-
+
+1. The main dis-advantage of ReLU is the dying ReLU problem. A ReLU neuron is dead if it is stuck in the negative side 
+and always outputs zero. It is also impossible for the neuron to recover bcak then.
+
+
+##Swish
+It was discovered by the people of Google Brain in 2017. It is basically a gated version of sigmoid activation fucntion.
+
+
+
+
+
+
+
