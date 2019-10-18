@@ -6,6 +6,7 @@ desc: "This blog post talks about the difference between Swish and Mish Activati
 keywords: "Blog, Mish, Swish, Activation Function"
 categories: [Blog, Theory]
 tags: [Blog, Theory]
+published: true
 icon: icon-html
 ---
 
@@ -32,14 +33,13 @@ ReLU is rectified linear unit activation function. It is defined as f(x) = max(x
 ![png](https://raw.githubusercontent.com/krutikabapat/krutikabapat.github.io/master/assets/ReLU.png)
 
 
-From the above figure we can see that ReLU has 0 gradient for all x<0, it means that it would not activate all neurons at a time and very few neurons will be activated making it sparse and thus cost efficient and easy for computation.
+From the above figure we can see that ReLU has 0 gradient for all x < 0, it means that it would not activate all neurons at a time and very few neurons will be activated making it sparse and thus cost efficient and easy for computation.
 
 ## Advantages of ReLU:-
 
 1. We can observe that for x>0 ReLu has constant gradient, which reduces the chance of vanishing gradients at any point of time. This property also results in faster learning.
 
-2. For all x<=0 the gradient is zero and hence less number of neurons will be fired which will reduce overfitting and is also
-cost efficient.
+2. For all x <= 0 the gradient is zero and hence less number of neurons will be fired which will reduce overfitting and is also cost efficient.
 
 3. Better convergence performance as compared to other activation fucntions.
 
@@ -53,8 +53,7 @@ and always outputs zero. It is also impossible for the neuron to recover bcak th
 It was discovered by the people of Google Brain in 2017. It is basically a gated version of sigmoid activation function.
 ![png](https://raw.githubusercontent.com/krutikabapat/krutikabapat.github.io/master/assets/Swish.png)
 
-The formula of swish is f(x) = x*sigmoid(\beta x) where \beta is either a constant or trainable parameter. When \beta = 0, swish becomes
-scaled linear function. When \beta tends to $\infty$, swish becomes ReLU function. The simple nature of swish and its resemblance with ReLU has made it popular and it has been replaced by ReLU in many neural networks. A simple replacement of ReLU by Swish suggests improvement in classification accuracy on ImageNet by 0.9 % and around 0.6% for Inception ResNet v2. 
+The formula of swish is f(x) = x*sigmoid(\beta x) where \beta is either a constant or trainable parameter. When \beta = 0, swish becomes scaled linear function. When \beta tends to $\infty$, swish becomes ReLU function. The simple nature of swish and its resemblance with ReLU has made it popular and it has been replaced by ReLU in many neural networks. A simple replacement of ReLU by Swish suggests improvement in classification accuracy on ImageNet by 0.9 % and around 0.6% for Inception ResNet v2. 
 
 ![png](https://raw.githubusercontent.com/krutikabapat/krutikabapat.github.io/master/assets/swish_baseline.png)
 
