@@ -24,7 +24,7 @@ The main objective of introducing a activation function is to introduce non-line
 
 ReLU is rectified linear unit activation function. It is defined as f(x) = max(x,0) for x>0, 0 otherwise.
 
-![png](https://raw.githubusercontent.com/krutikabapat/krutikabapat.github.io/master/assets/ReLU.png)
+![png](https://raw.githubusercontent.com/krutikabapat/krutikabapat.github.io/master/assets/ReLU_new.png)
 
 
 From the above figure we can see that ReLU has 0 gradient for all x<0, it means that it would not activate all neurons at a time and very few neurons will be activated making it sparse and thus cost efficient and easy for computation.
