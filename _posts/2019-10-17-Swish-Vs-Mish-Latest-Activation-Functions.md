@@ -23,9 +23,6 @@ relationship between input and output variables and it would not be able to solv
 The main objective of introducing a activation function is to introduce non-linearity which should be able to solve complex problems such as Natural Language Processing, Classification, Recognition, Segmentation etc. 
 
 The figure below shows some of the very popular activation functions.  
-![png](https://raw.githubusercontent.com/krutikabapat/krutikabapat.github.io/master/assets/ReLU.png)
-
-To study more about the importance of the activation functions, we need to look more into the derivatives of the activation functions.
 ![png](https://raw.githubusercontent.com/krutikabapat/krutikabapat.github.io/master/assets/activation.png)
 
 # ReLU
@@ -98,37 +95,41 @@ The following table shows the summary of all the properties of Mish.
 
 ## Comparsion between Swish And Mish
 
-4. Mish also outperforms in case of Noisy Input conditions as compared to other activation fucntions.
+The figure below shows the comparison between the deratives of the activation functions Mish and Swish. We study the
+nature of the graphs and some results about them.  
+![png](https://raw.githubusercontent.com/krutikabapat/krutikabapat.github.io/master/assets/mish_swish_com.png)
+
+1. Mish also outperforms in case of Noisy Input conditions as compared to other activation fucntions.
 
 ![png](https://raw.githubusercontent.com/krutikabapat/krutikabapat.github.io/master/assets/mish_noise.png)
 
-5. Test accuracy v/s optimzers for Mish and Swish show that there is less drop in accuracy in case of Mish than Swish.
+2. Test accuracy v/s optimzers for Mish and Swish show that there is less drop in accuracy in case of Mish than Swish.
 
 ![png](https://raw.githubusercontent.com/krutikabapat/krutikabapat.github.io/master/assets/Mish_optimiser.png)
 
-6. Dropout is a fundamental process used in Neural Network Training to avoid Overfitting. In Figure 14, Mish
+3. Dropout is a fundamental process used in Neural Network Training to avoid Overfitting. In Figure 14, Mish
 is shown to have a consistent improvement over Swish using different Dropout rates from 0.2 to 0.75 for a single
 dropout layer in a 4-layered network.
 
 ![png](https://raw.githubusercontent.com/krutikabapat/krutikabapat.github.io/master/assets/Mish_dropout.png)
 
 
-7. Test Accuracy verus Learning rates for Mish and Swish also show that Mish Outperformed Swish in many ways.
+4. Test Accuracy verus Learning rates for Mish and Swish also show that Mish Outperformed Swish in many ways.
 
 ![png](https://raw.githubusercontent.com/krutikabapat/krutikabapat.github.io/master/assets/Mish_learningrate.png)
 
-8. It has also been observed that when the width of the neural network is increased i.e the number of neaurons in a layer
+5. It has also been observed that when the width of the neural network is increased i.e the number of neaurons in a layer
 increased from 100 o 1024 in case of MNIST and CIFAR-10 classification, the test accuracy was always higher in case of Mish 
 then Swish.
 
 ![png](https://raw.githubusercontent.com/krutikabapat/krutikabapat.github.io/master/assets/Mish_width.png)
 
-9. The table below shows the test summary of Mean acuuracy, Mean loss and some other details abput Mish and Swish and Mish 
+6. The table below shows the test summary of Mean acuuracy, Mean loss and some other details abput Mish and Swish and Mish 
 outperforms Swish in all of the parameters.
 
 ![png](https://raw.githubusercontent.com/krutikabapat/krutikabapat.github.io/master/assets/statistic.png)
 
-10. A comparison of benchmark summary of Mish over other activation function, keeping the other parametres fixed show that
+7. A comparison of benchmark summary of Mish over other activation function, keeping the other parametres fixed show that
 Mish outperforms all the other activation functions.
 
 ![png](https://raw.githubusercontent.com/krutikabapat/krutikabapat.github.io/master/assets/benchmark.png)
