@@ -131,6 +131,6 @@ The figure below shows the comparison between the deratives of the activation fu
 
 ## References:
 
-1. [Swish] (https://arxiv.org/pdf/1908.08681.pdf)
-2. [Mish] (https://arxiv.org/abs/1710.05941)
+1. [Swish](https://arxiv.org/pdf/1908.08681.pdf)
+2. [Mish](https://arxiv.org/abs/1710.05941)
 
