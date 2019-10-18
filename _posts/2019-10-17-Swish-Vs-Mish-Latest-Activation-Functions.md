@@ -118,7 +118,7 @@ Mish outperforms all the other activation functions.
 
 ![png](https://raw.githubusercontent.com/krutikabapat/krutikabapat.github.io/master/assets/benchmark.png)
 
-## Mish and Swish in tensorflow and Pyotrch
+## Mish and Swish in tensorflow and Pytorch
 
 ![png](https://raw.githubusercontent.com/krutikabapat/krutikabapat.github.io/master/assets/pytorch.png)
 
