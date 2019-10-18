@@ -64,7 +64,7 @@ activation functions.
 
 1. In very deep networks, swish achieves higher test accuracy than ReLU.
 2. For every batch size, swish outperforms ReLU.
-3. Non monocity property i.e for all x<0, swish is neither decreasing nor increasing function.
+3. Non monocity property i.e for all x < 0, swish is neither decreasing nor increasing function.
 
 Now that we have completed understanding what Swish is let us move to Mish activation fucntion and see how it works!
 
@@ -106,12 +106,9 @@ nature of the graphs and some results about them.
 
 ![png](https://raw.githubusercontent.com/krutikabapat/krutikabapat.github.io/master/assets/Mish_optimiser.png)
 
-3. Dropout is a fundamental process used in Neural Network Training to avoid Overfitting. In Figure 14, Mish
-is shown to have a consistent improvement over Swish using different Dropout rates from 0.2 to 0.75 for a single
-dropout layer in a 4-layered network.
+3. Dropout is a fundamental process used in Neural Network Training to avoid Overfitting. Mish is shown to have a consistent improvement over Swish using different Dropout rates from 0.2 to 0.75 for a single dropout layer in a 4-layered network.
 
 ![png](https://raw.githubusercontent.com/krutikabapat/krutikabapat.github.io/master/assets/Mish_dropout.png)
-
 
 4. Test Accuracy verus Learning rates for Mish and Swish also show that Mish Outperformed Swish in many ways.
 
