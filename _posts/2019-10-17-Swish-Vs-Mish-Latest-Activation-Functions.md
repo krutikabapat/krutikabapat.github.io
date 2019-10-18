@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Swish-Vs-Mish-Latest-Activation-Functions"
+title: "Swish Vs Mish: Latest Activation Functions"
 date: 2019-10-17
 desc: "This blog post talks about the difference between Swish and Mish Activation Functions."
 keywords: "Blog, Mish, Swish, Activation Function"
@@ -15,7 +15,7 @@ In this blog post we will be learning about two of the very recent activation fu
 
 Let us move on and get more into it!!
 
-# Importance of activation functions
+## Importance of activation functions
 
 The major purpose of activation function in neural networks is to introduce non-linearity between output and the input.
 
