@@ -43,7 +43,7 @@ cost efficient.
 
 3. Better convergence performance as compared to other activation fucntions.
 
-Disadvantages of ReLU:-
+## Disadvantages of ReLU:-
 
 1. The main dis-advantage of ReLU is the dying ReLU problem. A ReLU neuron is dead if it is stuck in the negative side 
 and always outputs zero. It is also impossible for the neuron to recover bcak then.
