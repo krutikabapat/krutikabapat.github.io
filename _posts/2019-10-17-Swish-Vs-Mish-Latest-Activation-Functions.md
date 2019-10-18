@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Swish-Vs-Mish-Latest-Activation-Functions"
-date: 2019-17-10
+date: 2019-10-17
 desc: "This blog post talks about the difference between Swish and Mish Activation Functions."
 keywords: "Blog, Mish, Swish, Activation Function"
 categories: [Blog, Theory]
