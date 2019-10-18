@@ -83,6 +83,12 @@ generally causes training to drastically slow down due to near-zero gradients.
 
 3. ReLU has an order of continuity as zero i.e it is not continuously differentiable and many cause some problems in gradient based optimization which is not in the case of Mish.
 
+## Summary of Property of Mish
+
+The following table shows the summary of all the properties of Mish.
+![png](https://raw.githubusercontent.com/krutikabapat/krutikabapat.github.io/master/assets/Mish_prop.png)
+
+
 ## Comparsion between Swish And Mish
 
 4. Mish also outperforms in case of Noisy Input conditions as compared to other activation fucntions.
