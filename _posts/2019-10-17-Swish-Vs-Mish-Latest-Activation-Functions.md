@@ -54,7 +54,7 @@ It was discovered by the people of Google Brain in 2017. It is basically a gated
 
 ![png](https://raw.githubusercontent.com/krutikabapat/krutikabapat.github.io/master/assets/Swish.png)
 
-The formula of swish is <img src="https://latex.codecogs.com/gif.latex?f(x) = x * \sigma(\beta x)" /> where <img src="https://latex.codecogs.com/gif.latex?\beta" /> is either a constant or trainable parameter. When <img src="https://latex.codecogs.com/gif.latex?\beta = 0" />, swish becomes scaled linear function. When \beta tends to \infty, swish becomes ReLU function. The simple nature of swish and its resemblance with ReLU has made it popular and it has been replaced by ReLU in many neural networks. A simple replacement of ReLU by Swish suggests improvement in classification accuracy on ImageNet by 0.9 % and around 0.6% for Inception ResNet v2. 
+The formula of swish is <img src="https://latex.codecogs.com/gif.latex?f(x) = x * \sigma(\beta x)" /> where <img src="https://latex.codecogs.com/gif.latex?\beta" /> is either a constant or trainable parameter. When <img src="https://latex.codecogs.com/gif.latex?\beta = 0" />, swish becomes scaled linear function. When <img src="https://latex.codecogs.com/gif.latex?\beta" /> tends to <img src="https://latex.codecogs.com/gif.latex?\infty" />, swish becomes ReLU function. The simple nature of swish and its resemblance with ReLU has made it popular and it has been replaced by ReLU in many neural networks. A simple replacement of ReLU by Swish suggests improvement in classification accuracy on ImageNet by 0.9 % and around 0.6% for Inception ResNet v2. 
 
 ![png](https://raw.githubusercontent.com/krutikabapat/krutikabapat.github.io/master/assets/swish_baseline.png)
 
