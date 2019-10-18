@@ -70,7 +70,7 @@ Now that we have completed understanding what Swish is let us move to Mish activ
 
 # Mish
 
-Mish is also one of the recent activation networks and is given by the formula <img src="https://latex.codecogs.com/gif.latex?f(x) = x * \tanh(softplus(x)) /> where <img src="https://latex.codecogs.com/gif.latex?softplus(x) = \ln(1+ e^x)" />.	Most of the experiments suggest that Mish works better than ReLU, sigmoid and even Swish activation fucntions.
+Mish is also one of the recent activation networks and is given by the formula <img src="https://latex.codecogs.com/gif.latex?f(x) = x * \tanh(softplus(x)) /> where <img src="https://latex.codecogs.com/gif.latex?softplus(x) = \ln(1+ e^x)" />.	Most of the experiments suggest that Mish works better than ReLU, sigmoid and even Swish.
 
 The following is the graph of Mish activation fucntion.
 
