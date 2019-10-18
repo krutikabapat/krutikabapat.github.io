@@ -10,9 +10,7 @@ icon: icon-html
 ---
 
 
-In this blog post we will be learning about two of the very recent activation functions Mish and Swift. Some of the activation
-functions which are already in the buzz. Relu, Leaky-relu, sigmoid, tanh are common among them. These days two of the activation 
-functions Mish and Swift have outperformed many of the previous results by Relu and Leaky Relu specifically.
+In this blog post we will be learning about two of the very recent activation functions Mish and Swift. Some of the activation functions which are already in the buzz. Relu, Leaky-relu, sigmoid, tanh are common among them. These days two of the activation functions Mish and Swift have outperformed many of the previous results by Relu and Leaky Relu specifically.
 
 Let us move on and get more into it!!
 
@@ -47,7 +45,20 @@ and always outputs zero. It is also impossible for the neuron to recover bcak th
 
 
 ##Swish
-It was discovered by the people of Google Brain in 2017. It is basically a gated version of sigmoid activation fucntion.
+It was discovered by the people of Google Brain in 2017. It is basically a gated version of sigmoid activation function.
+![png](https://raw.githubusercontent.com/krutikabapat/krutikabapat.github.io/master/assets/swish.png)
+
+The formula of swish is f(x) = x*sigmoid(\beta x). The simple nature of swish and its resemblance with ReLU has made it popular and 
+it has been replaced by ReLU in many neural networks. A simple replacement of ReLU by Swish suggests improvement in classification accuracy on ImageNet by 0.9 % and around 0.6% for Inception ResNet v2. 
+
+Advantages of Swish:
+
+1. In very deep networks, swish achieves higher test accuracy than ReLU.
+2. For every batch size, swish outperforms ReLU.
+
+
+
+
 
 
 
