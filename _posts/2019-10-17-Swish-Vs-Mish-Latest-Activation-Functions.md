@@ -12,7 +12,6 @@ icon: icon-html
 
 
 In this blog post we will be learning about two of the very recent activation functions Mish and Swift. Some of the activation functions which are already in the buzz. Relu, Leaky-relu, sigmoid, tanh are common among them. These days two of the activation functions Mish and Swift have outperformed many of the previous results by Relu and Leaky Relu specifically.
-
 Let us move on and get more into it!!
 
 ## Importance of activation functions
@@ -20,7 +19,6 @@ Let us move on and get more into it!!
 The major purpose of activation function in neural networks is to introduce non-linearity between output and the input.
 
 They basically decide when to fire a neuron and when to not. If we do not use activation fucntion, there will be a linear relationship between input and output variables and it would not be able to solve much complex problems as a linear relationship has some limitations.
-
 The main objective of introducing a activation function is to introduce non-linearity which should be able to solve complex problems such as Natural Language Processing, Classification, Recognition, Segmentation etc. 
 
 The figure below shows some of the very popular activation functions.  
