@@ -14,7 +14,7 @@ In this blog post we will be learning about two of the very recent activation fu
 
 Let us move on and get more into it!!
 
-## ReLU
+# ReLU
 
 The major purpose of activation function in neural networks is to introduce non-linearity between output and the input.
 They basically decide when to fire a neuron and when to not. If we do not use activation fucntion, there will be a linear
@@ -29,7 +29,7 @@ ReLU is rectified linear unit activation function. It is defined as f(x) = max(x
 
 From the above figure we can see that ReLU has 0 gradient for all x<0, it means that it would not activate all neurons at a time and very few neurons will be activated making it sparse and thus cost efficient and easy for computation.
 
-Advantages of ReLU:-
+## Advantages of ReLU:-
 
 1. We can observe that for x>0 ReLu has constant gradient, which reduces the chance of vanishing gradients at any point of time. This property also results in faster learning.
 
@@ -44,7 +44,7 @@ Disadvantages of ReLU:-
 and always outputs zero. It is also impossible for the neuron to recover bcak then.
 
 
-## Swish
+# Swish
 It was discovered by the people of Google Brain in 2017. It is basically a gated version of sigmoid activation function.
 ![png](https://raw.githubusercontent.com/krutikabapat/krutikabapat.github.io/master/assets/Swish.png)
 
@@ -56,7 +56,7 @@ scaled linear function. When \beta tends to $\infty$, swish becomes ReLU functio
 Like ReLU, Swish is unbounded above and bounded below. Swish is smooth and nonmonotonic. In fact, the non-monotonicity property of Swish makes it different from most common
 activation functions.
 
-# Advantages of Swish:
+## Advantages of Swish:
 
 1. In very deep networks, swish achieves higher test accuracy than ReLU.
 2. For every batch size, swish outperforms ReLU.
@@ -64,7 +64,7 @@ activation functions.
 
 Now that we have completed understanding what Swish is let us move to Mish activation fucntion and see how it works!
 
-## Mish
+# Mish
 
 Mish is also one of the recent activation networks and is given by the formula f(x) = x* tanh(softplus(x)) where softplus(x) = ln(1+$e^x$).	Most of the experiments suggest that Mish works better than ReLU, sigmoid and even Swish activation fucntions.
 
