@@ -14,7 +14,7 @@ In this blog post we will be learning about two of the very recent activation fu
 
 Let us move on and get more into it!!
 
-##ReLU
+## ReLU
 
 The major purpose of activation function in neural networks is to introduce non-linearity between output and the input.
 They basically decide when to fire a neuron and when to not. If we do not use activation fucntion, there will be a linear
@@ -44,7 +44,7 @@ Disadvantages of ReLU:-
 and always outputs zero. It is also impossible for the neuron to recover bcak then.
 
 
-##Swish
+## Swish
 It was discovered by the people of Google Brain in 2017. It is basically a gated version of sigmoid activation function.
 ![png](https://raw.githubusercontent.com/krutikabapat/krutikabapat.github.io/master/assets/Swish.png)
 
@@ -56,7 +56,7 @@ scaled linear function. When \beta tends to $\infty$, swish becomes ReLU functio
 Like ReLU, Swish is unbounded above and bounded below. Swish is smooth and nonmonotonic. In fact, the non-monotonicity property of Swish makes it different from most common
 activation functions.
 
-Advantages of Swish:
+# Advantages of Swish:
 
 1. In very deep networks, swish achieves higher test accuracy than ReLU.
 2. For every batch size, swish outperforms ReLU.
@@ -64,7 +64,7 @@ Advantages of Swish:
 
 Now that we have completed understanding what Swish is let us move to Mish activation fucntion and see how it works!
 
-##Mish
+## Mish
 
 Mish is also one of the recent activation networks and is given by the formula f(x) = x* tanh(softplus(x)) where softplus(x) = ln(1+$e^x$).	Most of the experiments suggest that Mish works better than ReLU, sigmoid and even Swish activation fucntions.
 
@@ -74,7 +74,7 @@ The following is the graph of Mish activation fucntion.
 
 Like both Swish and Relu, Mish is bounded below and unbounded above and the range is nearly [-0.31, $\infty$). 
 
-Advantages of Mish:-
+## Advantages of Mish:-
 
 1. Being unbounded above is a desirable property for any activation function since it avoids saturation which
 generally causes training to drastically slow down due to near-zero gradients.
@@ -118,9 +118,15 @@ Mish outperforms all the other activation functions.
 
 ![png](https://raw.githubusercontent.com/krutikabapat/krutikabapat.github.io/master/assets/benchmark.png)
 
-##Mish and Swish in tensorflow and Pyotrch
+## Mish and Swish in tensorflow and Pyotrch
 
 ![png](https://raw.githubusercontent.com/krutikabapat/krutikabapat.github.io/master/assets/pytorch.png)
+
+
+## References:
+
+1. https://arxiv.org/pdf/1908.08681.pdf
+2. 
 
 
 
