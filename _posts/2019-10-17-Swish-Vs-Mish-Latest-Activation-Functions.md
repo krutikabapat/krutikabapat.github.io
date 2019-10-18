@@ -126,7 +126,7 @@ Mish outperforms all the other activation functions.
 ## References:
 
 1. https://arxiv.org/pdf/1908.08681.pdf
-2. 
+2. https://arxiv.org/abs/1710.05941
 
 
 
