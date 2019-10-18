@@ -14,13 +14,21 @@ In this blog post we will be learning about two of the very recent activation fu
 
 Let us move on and get more into it!!
 
-# ReLU
+# Importance of activation functions
 
 The major purpose of activation function in neural networks is to introduce non-linearity between output and the input.
 They basically decide when to fire a neuron and when to not. If we do not use activation fucntion, there will be a linear
 relationship between input and output variables and it would not be able to solve much complex problems as a linear relationship has some limitations.
 
-The main objective of introducing a activation function is to introduce non-linearity which should be able to solve complex problems such as Natural Language Processing, Classification, Recognition, Segmentation etc.  
+The main objective of introducing a activation function is to introduce non-linearity which should be able to solve complex problems such as Natural Language Processing, Classification, Recognition, Segmentation etc. 
+
+The figure below shows some of the very popular activation functions.  
+![png](https://raw.githubusercontent.com/krutikabapat/krutikabapat.github.io/master/assets/ReLU.png)
+
+To study more about the importance of the activation functions, we need to look more into the derivatives of the activation functions.
+![png](https://raw.githubusercontent.com/krutikabapat/krutikabapat.github.io/master/assets/activation.png)
+
+# ReLU
 
 ReLU is rectified linear unit activation function. It is defined as f(x) = max(x,0) for x>0, 0 otherwise.
 
