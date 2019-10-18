@@ -53,7 +53,7 @@ and always outputs zero. It is also impossible for the neuron to recover bcak th
 It was discovered by the people of Google Brain in 2017. It is basically a gated version of sigmoid activation function.
 ![png](https://raw.githubusercontent.com/krutikabapat/krutikabapat.github.io/master/assets/Swish.png)
 
-The formula of swish is f(x) = x*sigmoid(\beta x) where \beta is either a constant or trainable parameter. When \beta = 0, swish becomes scaled linear function. When \beta tends to $ \infty $, swish becomes ReLU function. The simple nature of swish and its resemblance with ReLU has made it popular and it has been replaced by ReLU in many neural networks. A simple replacement of ReLU by Swish suggests improvement in classification accuracy on ImageNet by 0.9 % and around 0.6% for Inception ResNet v2. 
+The formula of swish is f(x) = x*sigmoid(\beta x) where \beta is either a constant or trainable parameter. When \beta = 0, swish becomes scaled linear function. When \beta tends to \infty, swish becomes ReLU function. The simple nature of swish and its resemblance with ReLU has made it popular and it has been replaced by ReLU in many neural networks. A simple replacement of ReLU by Swish suggests improvement in classification accuracy on ImageNet by 0.9 % and around 0.6% for Inception ResNet v2. 
 
 ![png](https://raw.githubusercontent.com/krutikabapat/krutikabapat.github.io/master/assets/swish_baseline.png)
 
