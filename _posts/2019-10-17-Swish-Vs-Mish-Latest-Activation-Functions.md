@@ -91,10 +91,10 @@ The following table shows the summary of all the properties of Mish.
 
 ## Comparsion between Swish And Mish
 
-The figure below shows the comparison between the deratives of the activation functions Mish and Swish. We study the nature of the graphs and some results about them.  
+The figure below shows the comparison between the derivatives of the activation functions Mish and Swish. We study the nature of the graphs and some results about them.  
 ![png](https://raw.githubusercontent.com/krutikabapat/krutikabapat.github.io/master/assets/mish_swish_com.png)
 
-1. Mish also outperforms in case of Noisy Input conditions as compared to other activation fucntions.
+1. Mish also outperforms in case of Noisy Input conditions as compared to other activation functions.
 
 ![png](https://raw.githubusercontent.com/krutikabapat/krutikabapat.github.io/master/assets/mish_noise.png)
 
@@ -110,11 +110,11 @@ The figure below shows the comparison between the deratives of the activation fu
 
 ![png](https://raw.githubusercontent.com/krutikabapat/krutikabapat.github.io/master/assets/Mish_learningrate.png)
 
-5. It has also been observed that when the width of the neural network is increased i.e the number of neaurons in a layer increased from 100 o 1024 in case of MNIST and CIFAR-10 classification, the test accuracy was always higher in case of Mish then Swish.
+5. It has also been observed that when the width of the neural network is increased i.e the number of neurons in a layer increased from 100 o 1024 in case of MNIST and CIFAR-10 classification, the test accuracy was always higher in case of Mish then Swish.
 
 ![png](https://raw.githubusercontent.com/krutikabapat/krutikabapat.github.io/master/assets/Mish_width.png)
 
-6. The table below shows the test summary of Mean acuuracy, Mean loss and some other details abput Mish and Swish and Mish outperforms Swish in all of the parameters.
+6. The table below shows the test summary of mean acuuracy, mean loss and some other details abput Mish and Swish and Mish outperforms Swish in all of the parameters.
 
 ![png](https://raw.githubusercontent.com/krutikabapat/krutikabapat.github.io/master/assets/statistic.png)
 
