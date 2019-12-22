@@ -143,7 +143,7 @@ The shell result would look like as follows:
 
 ## References:  
 
-1. [CUDA C/C++ Basics by Cyril Zeller, NVIDIA] (http://www.int.washington.edu/PROGRAMS/12-2c/week3/clark_01.pdf)
+1. [CUDA C/C++ Basics by Cyril Zeller, NVIDIA](http://www.int.washington.edu/PROGRAMS/12-2c/week3/clark_01.pdf)
 2. https://stackoverflow.com/questions/9846523/explanation-of-cuda-c-and-c
 3. https://cuda-tutorial.readthedocs.io/en/latest/tutorials/tutorial01/
 
