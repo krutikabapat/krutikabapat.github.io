@@ -17,4 +17,18 @@ In this blog post we will learn about CUDA programming, difference between C and
 CUDA is NVIDIA's parallel computing architecture that enables increase in computing performance by utilizing the power of GPU (Graphical Processing Unit). CUDA provides C/C++ language extension for programming and managing GPUs.  
 
 
+## Structure of CUDA programming  
+
+1. Both CPUs and GPUs are used for computations.  
+2. CPU systems are referred as host and GPU systems as device.  
+3. Both CPU and GPU have completely separate memory space.  
+4. Serial workload is performed on CPUs and parallel computations on GPUs.  
+
+
+## Difference between CUDA and C Programming
+
+![png](https://raw.githubusercontent.com/krutikabapat/krutikabapat.github.io/master/assets/CUDA_C.png)
+
+
+
 
