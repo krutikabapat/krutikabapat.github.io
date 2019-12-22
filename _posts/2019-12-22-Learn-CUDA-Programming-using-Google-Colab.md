@@ -34,7 +34,7 @@ There are various differences between CUDA programming and C programming. Some o
 
 1. In C programming we use general functions to perform particular tasks where as in CUDA programming __global__ specifier function is used that runs on device (GPU). It is generally invoked via host code, for example the main function in the above example, and is called as "kernel".  
 
-2. When a kernel is invoked, its execution is provided via  <<<1,1>>>(variables) also called kernel launch. 
+2. When a kernel is invoked, its execution is provided via  < < < 1,1> > >(variables) also called kernel launch. 
 
 
 ## Workflow in CUDA Programs  
