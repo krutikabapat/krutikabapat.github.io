@@ -96,35 +96,35 @@ The shell result would look like as follows:
 
 7. Now we will look on a simple CUDA code to understand the workflow.  
 
-   7.1)  To run CUDA C/C++ code in google colab notebook, add the %%cu extension at the beginning of your code.
+   3.1)  To run CUDA C/C++ code in google colab notebook, add the %%cu extension at the beginning of your code.
    
    ![png](https://raw.githubusercontent.com/krutikabapat/krutikabapat.github.io/master/assets/CUDA_libraries.png)
    
-   7.2) __global__ function device (GPU) to execute the multiplication of two variables.  
+   3.2) __global__ function device (GPU) to execute the multiplication of two variables.  
    
    ![png](https://raw.githubusercontent.com/krutikabapat/krutikabapat.github.io/master/assets/CUDA_global.png)
    
-   7.3) Declare variables for host and device.  
+   3.3) Declare variables for host and device.  
    
    ![png](https://raw.githubusercontent.com/krutikabapat/krutikabapat.github.io/master/assets/CUDA_host.png)
    
-   7.4) Allocate memory for device variables and define variable values.  
+   3.4) Allocate memory for device variables and define variable values.  
    
    ![png](https://raw.githubusercontent.com/krutikabapat/krutikabapat.github.io/master/assets/CUDA_space.png)
    
-   7.5) Copy input variables from host to device.    
+   3.5) Copy input variables from host to device.    
    
    ![png](https://raw.githubusercontent.com/krutikabapat/krutikabapat.github.io/master/assets/CUDA_input_device.png)
    
-   7.6) Launch the kernelto carry out the operations.  
+   3.6) Launch the kernelto carry out the operations.  
    
    ![png](https://raw.githubusercontent.com/krutikabapat/krutikabapat.github.io/master/assets/CUDA_kernel.png)
    
-   7.7) Copy the result back from device to host.  
+   3.7) Copy the result back from device to host.  
    
    ![png](https://raw.githubusercontent.com/krutikabapat/krutikabapat.github.io/master/assets/CUDA_copyback.png)
    
-   7.8) Free up the memory.   
+   3.8) Free up the memory.   
    
    ![png](https://raw.githubusercontent.com/krutikabapat/krutikabapat.github.io/master/assets/CUDA_freeup.png)
    
@@ -139,6 +139,8 @@ The shell result would look like as follows:
 3. A software development kit that includes libraries, various debugging, profiling and compiling tools, and bindings that let CPU-side programming languages invoke GPU-side code.   
 
 4. The point of CUDA is to make us enable to write compatible massive parallel codes for SIMD architectures.  
+
+We will learn more about CUDA programming in the next blog post. The full code of the above is available at [CUDA Programming PART1](https://github.com/krutikabapat/CUDA_Programming)
 
 
 ## References:  
