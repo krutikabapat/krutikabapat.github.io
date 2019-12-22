@@ -71,10 +71,6 @@ After successfully uninstalling the shell result would look like:
 !apt-get update
 !apt-get install cuda-9.2
 ```
-After successfully uninstalling the shell result would look like:  
-
-![png](https://raw.githubusercontent.com/krutikabapat/krutikabapat.github.io/master/assets/CUDA_install.png)
-
 
 4. Check version of CUDA installed with the following command:  
 ```
