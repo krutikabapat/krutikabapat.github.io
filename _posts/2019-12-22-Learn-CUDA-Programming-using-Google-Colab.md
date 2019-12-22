@@ -50,7 +50,7 @@ There are various differences between CUDA programming and C programming. Some o
 
 1. Open a new file in Google Colab and change the runtime to "GPU".    
 
-2. Uninstall any previous versions of CUDA, if any completely using below commands.    
+2. Uninstall any previous versions of CUDA, if any completely using below commands.        
 
 ```
 !apt-get --purge remove cuda nvidia* libnvidia-*
@@ -60,7 +60,7 @@ There are various differences between CUDA programming and C programming. Some o
 !apt-get update
 ```
 
-3. Install CUDA 9.0/10.0    
+3. Install CUDA 9.0/10.0        
 
 ```
 !wget https://developer.nvidia.com/compute/cuda/9.2/Prod/local_installers/cuda-repo-ubuntu1604-9-2-local_9.2.88-1_amd64 -O cuda-repo-ubuntu1604-9-2-local_9.2.88-1_amd64.deb
