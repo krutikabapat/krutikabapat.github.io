@@ -80,6 +80,8 @@ The shell result would look like as follows:
 
 ![png](https://raw.githubusercontent.com/krutikabapat/krutikabapat.github.io/master/assets/CUDA_version.png)   
 
+## Installation and Code snippet
+
 5. Execute the given command to install a small extension to run nvcc from Google Colab notebook cells.  
    ```shell
    !pip install git+git://github.com/andreinechaev/nvcc4jupyter.git
