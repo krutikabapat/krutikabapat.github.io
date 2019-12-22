@@ -60,7 +60,7 @@ There are various differences between CUDA programming and C programming. Some o
 !apt-get update
 ```
 
-3. Install CUDA 9.0/10.0        
+3. Install CUDA 9.0/10.0         
 
 ```
 !wget https://developer.nvidia.com/compute/cuda/9.2/Prod/local_installers/cuda-repo-ubuntu1604-9-2-local_9.2.88-1_amd64 -O cuda-repo-ubuntu1604-9-2-local_9.2.88-1_amd64.deb
