@@ -57,10 +57,6 @@ There are various differences between CUDA programming and C programming. Some o
 !apt autoremove
 !apt-get update
 ```
-After successfully uninstalling the shell result would look like:  
-![png](https://raw.githubusercontent.com/krutikabapat/krutikabapat.github.io/master/assets/CUDA_uninstall.png)
-
-
 
 3. Install CUDA 9.0/10.0  
 
