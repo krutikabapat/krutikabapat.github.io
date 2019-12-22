@@ -133,9 +133,19 @@ The shell result would look like as follows:
 
 
 1. CUDA is majorly parallel hardware designed to run generic (non-graphic) code, with appropriate drivers for doing so.  
+
 2. CUDA is programming language based on C for programming and an assembly language that other programming languages can use as a target.  
+
 3. A software development kit that includes libraries, various debugging, profiling and compiling tools, and bindings that let CPU-side programming languages invoke GPU-side code.   
+
 4. The point of CUDA is to make us enable to write compatible massive parallel codes for SIMD architectures.  
+
+
+## References:  
+
+1. [CUDA C/C++ Basics by Cyril Zeller, NVIDIA] (http://www.int.washington.edu/PROGRAMS/12-2c/week3/clark_01.pdf)
+2. https://stackoverflow.com/questions/9846523/explanation-of-cuda-c-and-c
+3. https://cuda-tutorial.readthedocs.io/en/latest/tutorials/tutorial01/
 
 
    
