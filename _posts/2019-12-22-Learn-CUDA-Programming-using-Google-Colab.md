@@ -69,6 +69,7 @@ There are various differences between CUDA programming and C programming. Some o
 !apt-get update
 !apt-get install cuda-9.2
 ```
+<!-- -->
 
 4. Check version of CUDA installed with the following command:     
 
