@@ -50,6 +50,7 @@ There are various differences between CUDA programming and C programming. Some o
 
 1. Open a new file in Google Colab and change the runtime to "GPU".  
 2. Uninstall any previous versions of CUDA, if any completely using below commands.  
+
 ```
 !apt-get --purge remove cuda nvidia* libnvidia-*
 !dpkg -l | grep cuda- | awk '{print $2}' | xargs -n1 dpkg --purge
@@ -68,55 +69,59 @@ There are various differences between CUDA programming and C programming. Some o
 !apt-get install cuda-9.2
 ```
 
-4. Check version of CUDA installed with the following command:  
+4. Check version of CUDA installed with the following command: 
+
 ```
 !nvcc --version
 ```
+
 The shell result would look like as follows:
 
 ![png](https://raw.githubusercontent.com/krutikabapat/krutikabapat.github.io/master/assets/CUDA_version.png)
 
-5. Execute the given command to install a small extension to run nvcc from Google Colab notebook cells.
+5. Execute the given command to install a small extension to run nvcc from Google Colab notebook cells.  
+
 ```
 !pip install git+git://github.com/andreinechaev/nvcc4jupyter.git
 ```
 
 6. Load the extension using the following command:  
+
 ```
 %load_ext nvcc_plugin
 ```
 
 7. Now we will look on a simple CUDA code to understand the workflow.  
 
-   7.a)  To run CUDA C/C++ code in google colab notebook, add the %%cu extension at the beginning of your code.
+   7.1)  To run CUDA C/C++ code in google colab notebook, add the %%cu extension at the beginning of your code.
    
    ![png](https://raw.githubusercontent.com/krutikabapat/krutikabapat.github.io/master/assets/CUDA_libraries.png)
    
-   7.b) __global__ function device (GPU) to execute the multiplication of two variables.  
+   7.2) __global__ function device (GPU) to execute the multiplication of two variables.  
    
    ![png](https://raw.githubusercontent.com/krutikabapat/krutikabapat.github.io/master/assets/CUDA_global.png)
    
-   7.c) Declare variables for host and device.  
+   7.3) Declare variables for host and device.  
    
    ![png](https://raw.githubusercontent.com/krutikabapat/krutikabapat.github.io/master/assets/CUDA_host.png)
    
-   7.d) Allocate memory for device variables and define variable values.  
+   7.4) Allocate memory for device variables and define variable values.  
    
    ![png](https://raw.githubusercontent.com/krutikabapat/krutikabapat.github.io/master/assets/CUDA_space.png)
    
-   7.e) Copy input variables from host to device.    
+   7.5) Copy input variables from host to device.    
    
    ![png](https://raw.githubusercontent.com/krutikabapat/krutikabapat.github.io/master/assets/CUDA_input_device.png)
    
-   7.f) Launch the kernelto carry out the operations.  
+   7.6) Launch the kernelto carry out the operations.  
    
    ![png](https://raw.githubusercontent.com/krutikabapat/krutikabapat.github.io/master/assets/CUDA_kernel.png)
    
-   7.g) Copy the result back from device to host.  
+   7.7) Copy the result back from device to host.  
    
    ![png](https://raw.githubusercontent.com/krutikabapat/krutikabapat.github.io/master/assets/CUDA_copyback.png)
    
-   7.h) Free up the memory.   
+   7.8) Free up the memory.   
    
    ![png](https://raw.githubusercontent.com/krutikabapat/krutikabapat.github.io/master/assets/CUDA_freeup.png)
    
