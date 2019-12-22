@@ -140,7 +140,7 @@ The shell result would look like as follows:
 
 4. The point of CUDA is to make us enable to write compatible massive parallel codes for SIMD architectures.  
 
-We will learn more about CUDA programming in the next blog post. The full code of the above is available at [CUDA Programming PART1](https://github.com/krutikabapat/CUDA_Programming)
+We will learn more about CUDA programming in the next blog post. The full code of the above is available at [CUDA Programming PART1](https://github.com/krutikabapat/CUDA_Programming). Share your feedback and kindly reach out for any queries.
 
 
 ## References:  
