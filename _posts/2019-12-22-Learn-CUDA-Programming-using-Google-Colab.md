@@ -49,6 +49,7 @@ There are various differences between CUDA programming and C programming. Some o
 ## Understanding CUDA programming with an sample code on Google Cloud  
 
 1. Open a new file in Google Colab and change the runtime to "GPU".  
+
 2. Uninstall any previous versions of CUDA, if any completely using below commands.  
 
 ```
