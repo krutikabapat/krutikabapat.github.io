@@ -71,26 +71,26 @@ There are various differences between CUDA programming and C programming. Some o
 <!-- -->
 
 4. Check version of CUDA installed with the following command:     
-
-```
-!nvcc --version
-```
+   ```shell
+   !nvcc --version
+   ```
+<!-- -->
 
 The shell result would look like as follows:    
 
 ![png](https://raw.githubusercontent.com/krutikabapat/krutikabapat.github.io/master/assets/CUDA_version.png)
 
 5. Execute the given command to install a small extension to run nvcc from Google Colab notebook cells.  
-
-```
-!pip install git+git://github.com/andreinechaev/nvcc4jupyter.git
-```
+   ```shell
+   !pip install git+git://github.com/andreinechaev/nvcc4jupyter.git
+   ```
+<!-- -->
 
 6. Load the extension using the following command:  
-
-```
-%load_ext nvcc_plugin
-```
+   ```
+   %load_ext nvcc_plugin
+   ```
+<!-- -->
 
 7. Now we will look on a simple CUDA code to understand the workflow.  
 
