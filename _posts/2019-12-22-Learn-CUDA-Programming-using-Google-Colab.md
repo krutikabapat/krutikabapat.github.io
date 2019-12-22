@@ -30,5 +30,128 @@ CUDA is NVIDIA's parallel computing architecture that enables increase in comput
 ![png](https://raw.githubusercontent.com/krutikabapat/krutikabapat.github.io/master/assets/CUDA_C.png)
 
 
+There are various differences between CUDA programming and C programming. Some of the following are listed below.  
+
+1. In C programming we use general functions to perform particular tasks where as in CUDA programming __global__ specifier function is used that runs on device (GPU). It is generally invoked via host code, for example the main function in the above example, and is called as "kernel".  
+
+2. When a kernel is invoked, its execution is provided via  <<<...>>> also called kernel launch. 
+
+
+## Workflow in CUDA Programs  
+
+1. Allocate memory to host and initialize the data of the host.  
+2. Allocate memory to the device.  
+3. Transfer the input data from host memory to device memory.  
+4. Invoke or execute the kernel.  
+5. Transfer the output from device memory to host memory.  
+
+
+## Understanding CUDA programming with an sample code on Google Cloud  
+
+1. Open a new file in Google Colab and change the runtime to "GPU".  
+2. Uninstall any previous versions of CUDA, if any completely using below commands.  
+```
+!apt-get --purge remove cuda nvidia* libnvidia-*
+!dpkg -l | grep cuda- | awk '{print $2}' | xargs -n1 dpkg --purge
+!apt-get remove cuda-*
+!apt autoremove
+!apt-get update
+```
+After successfully uninstalling the shell result would look like:  
+![png](https://raw.githubusercontent.com/krutikabapat/krutikabapat.github.io/master/assets/CUDA_uninstall.png)
+
+
+
+3. Install CUDA 9.0/10.0  
+
+```
+!wget https://developer.nvidia.com/compute/cuda/9.2/Prod/local_installers/cuda-repo-ubuntu1604-9-2-local_9.2.88-1_amd64 -O cuda-repo-ubuntu1604-9-2-local_9.2.88-1_amd64.deb
+!dpkg -i cuda-repo-ubuntu1604-9-2-local_9.2.88-1_amd64.deb
+!apt-key add /var/cuda-repo-9-2-local/7fa2af80.pub
+!apt-get update
+!apt-get install cuda-9.2
+```
+After successfully uninstalling the shell result would look like:  
+
+![png](https://raw.githubusercontent.com/krutikabapat/krutikabapat.github.io/master/assets/CUDA_install.png)
+
+
+4. Check version of CUDA installed with the following command:  
+```
+!nvcc --version
+```
+The shell result would look like as follows:
+
+![png](https://raw.githubusercontent.com/krutikabapat/krutikabapat.github.io/master/assets/CUDA_version.png)
+
+5. Execute the given command to install a small extension to run nvcc from Google Colab notebook cells.
+```
+!pip install git+git://github.com/andreinechaev/nvcc4jupyter.git
+```
+
+6. Load the extension using the following command:  
+```
+%load_ext nvcc_plugin
+```
+
+7. Now we will look on a simple CUDA code to understand the workflow.  
+
+   7.a)  To run CUDA C/C++ code in google colab notebook, add the %%cu extension at the beginning of your code.
+   
+   ![png](https://raw.githubusercontent.com/krutikabapat/krutikabapat.github.io/master/assets/CUDA_libraries.png)
+   
+   7.b) __global__ function device (GPU) to execute the multiplication of two variables.  
+   
+   ![png](https://raw.githubusercontent.com/krutikabapat/krutikabapat.github.io/master/assets/CUDA_global.png)
+   
+   7.c) Declare variables for host and device.  
+   
+   ![png](https://raw.githubusercontent.com/krutikabapat/krutikabapat.github.io/master/assets/CUDA_host.png)
+   
+   7.d) Allocate memory for device variables and define variable values.  
+   
+   ![png](https://raw.githubusercontent.com/krutikabapat/krutikabapat.github.io/master/assets/CUDA_space.png)
+   
+   7.e) Copy input variables from host to device.    
+   
+   ![png](https://raw.githubusercontent.com/krutikabapat/krutikabapat.github.io/master/assets/CUDA_input_device.png)
+   
+   7.f) Launch the kernelto carry out the operations.  
+   
+   ![png](https://raw.githubusercontent.com/krutikabapat/krutikabapat.github.io/master/assets/CUDA_kernel.png)
+   
+   7.g) Copy the result back from device to host.  
+   
+   ![png](https://raw.githubusercontent.com/krutikabapat/krutikabapat.github.io/master/assets/CUDA_copyback.png)
+   
+   7.h) Free up the memory.   
+   
+   ![png](https://raw.githubusercontent.com/krutikabapat/krutikabapat.github.io/master/assets/CUDA_freeup.png)
+   
+
+## Advantages of CUDA Programming:  
+
+
+1. CUDA is majorly parallel hardware designed to run generic (non-graphic) code, with appropriate drivers for doing so.  
+2. CUDA is programming language based on C for programming and an assembly language that other programming languages can use as a target.  
+3. A software development kit that includes libraries, various debugging, profiling and compiling tools, and bindings that let CPU-side programming languages invoke GPU-side code.   
+4. The point of CUDA is to make us enable to write compatible massive parallel codes for SIMD architectures.  
+
+
+   
+   
+   
+   
+   
+
+
+
+  `
+
+
+
+
+
+
 
 
