@@ -87,7 +87,7 @@ The shell result would look like as follows:
 <!-- -->
 
 6. Load the extension using the following command:  
-   ```
+   ```shell
    %load_ext nvcc_plugin
    ```
 <!-- -->
