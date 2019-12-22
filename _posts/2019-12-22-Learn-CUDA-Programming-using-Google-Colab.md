@@ -58,6 +58,7 @@ There are various differences between CUDA programming and C programming. Some o
    !apt autoremove
    !apt-get update
    ```
+<!-- -->
 
 3. Install CUDA 9.0/10.0         
 
