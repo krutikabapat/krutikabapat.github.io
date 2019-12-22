@@ -78,7 +78,7 @@ There are various differences between CUDA programming and C programming. Some o
 
 The shell result would look like as follows:    
 
-![png](https://raw.githubusercontent.com/krutikabapat/krutikabapat.github.io/master/assets/CUDA_version.png)
+![png](https://raw.githubusercontent.com/krutikabapat/krutikabapat.github.io/master/assets/CUDA_version.png)   
 
 5. Execute the given command to install a small extension to run nvcc from Google Colab notebook cells.  
    ```shell
