@@ -46,7 +46,7 @@ There are various differences between CUDA programming and C programming. Some o
 5. Transfer the output from device memory to host memory.  
 
 
-## Understanding CUDA programming with an sample code on Google Cloud  
+## Understanding CUDA programming with a sample code on Google Cloud  
 
 1. Open a new file in Google Colab and change the runtime to "GPU".    
 
@@ -82,19 +82,19 @@ The shell result would look like as follows:
 
 ## Installation and Code snippet  
 
-5. Execute the given command to install a small extension to run nvcc from Google Colab notebook cells.  
+1. Execute the given command to install a small extension to run nvcc from Google Colab notebook cells.  
    ```shell
    !pip install git+git://github.com/andreinechaev/nvcc4jupyter.git
    ```
 <!-- -->
 
-6. Load the extension using the following command:  
+2. Load the extension using the following command:  
    ```shell
    %load_ext nvcc_plugin
    ```
 <!-- -->
 
-7. Now we will look on a simple CUDA code to understand the workflow.  
+3. Now we will look on a simple CUDA code to understand the workflow.  
 
    3.1)  To run CUDA C/C++ code in google colab notebook, add the %%cu extension at the beginning of your code.
    
