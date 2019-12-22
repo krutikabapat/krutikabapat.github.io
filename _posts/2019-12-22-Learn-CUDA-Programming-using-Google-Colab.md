@@ -51,15 +51,13 @@ There are various differences between CUDA programming and C programming. Some o
 1. Open a new file in Google Colab and change the runtime to "GPU".    
 
 2. Uninstall any previous versions of CUDA, if any completely using below commands.        
-
-```
-!apt-get --purge remove cuda nvidia* libnvidia-*
-!dpkg -l | grep cuda- | awk '{print $2}' | xargs -n1 dpkg --purge
-!apt-get remove cuda-*
-!apt autoremove
-!apt-get update
-
-```
+   ```shell
+   !apt-get --purge remove cuda nvidia* libnvidia-*
+   !dpkg -l | grep cuda- | awk '{print $2}' | xargs -n1 dpkg --purge
+   !apt-get remove cuda-*
+   !apt autoremove
+   !apt-get update
+   ```
 
 3. Install CUDA 9.0/10.0         
 
