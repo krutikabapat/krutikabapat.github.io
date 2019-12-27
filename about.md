@@ -7,7 +7,7 @@ Currently AI Intern at American Express, Bangalore. Previously research Intern a
 
 ### Internships
 
-<img src="/assets/rose.png" width="250">                    <img src="/assets/ntu.png" width="250">                     <img src="/assets/iit.jpeg" width="175">                     <img src="/assets/microsoft.jpg" width="200">
+<img src="/assets/rose.png" width="250">                    <img src="/assets/ntu.png" width="250">                     <img src="/assets/iit.jpeg" width="175">                     <img src="/assets/microsoft.jpg" width="200">                    <img src="/assets/amex.png" width="200">
 
 * Deep Learning Intern at AI Labs, American Express Bangalore.  
 * Deep learning and Computer Vision Intern at ROSE Labs NTU Singapore (May 2019- July 2019) 
