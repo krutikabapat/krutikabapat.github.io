@@ -3,7 +3,7 @@ layout: page
 title: About
 permalink: /about/
 ---
-Currently a Research Intern at ROSE Labs,NTU Singapore [ROSE Labs](https://rose.ntu.edu.sg/Pages/Home.aspx). May(2019)- July(2019). A Computer Vision, deep learning and machine learning enthusiast.
+Currently AI Intern at American Express, Bangalore. Previously research Intern at ROSE Labs,NTU Singapore [ROSE Labs](https://rose.ntu.edu.sg/Pages/Home.aspx). May(2019)- July(2019). A Computer Vision, deep learning and machine learning enthusiast.
 
 ### Internships
 
