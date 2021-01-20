@@ -18,7 +18,7 @@ Let us move on and get more into it!!
 
 The major purpose of activation function in neural networks is to introduce non-linearity between output and the input.
 
-They basically decide when to fire a neuron and when to not. If we do not use activation fucntion, there will be a linear relationship between input and output variables and it would not be able to solve much complex problems as a linear relationship has some limitations.
+They basically decide when to fire a neuron and when to not. If we do not use activation function, there will be a linear relationship between input and output variables and it would not be able to solve much complex problems as a linear relationship has some limitations.
 The main objective of introducing a activation function is to introduce non-linearity which should be able to solve complex problems such as Natural Language Processing, Classification, Recognition, Segmentation etc. 
 
 The figure below shows some of the very popular activation functions.  
@@ -39,11 +39,11 @@ From the above figure we can see that ReLU has 0 gradient for all x < 0, it mean
 
 2. For all x <= 0 the gradient is zero and hence less number of neurons will be fired which will reduce overfitting and is also cost efficient.
 
-3. Better convergence performance as compared to other activation fucntions.
+3. Better convergence performance as compared to other activation functions.
 
 ## Disadvantages of ReLU
 
-1. The main disadvantage of ReLU is the dying ReLU problem. A ReLU neuron is dead if it is stuck in the negative side and always outputs zero. It is also impossible for the neuron to recover bcak then.
+1. The main disadvantage of ReLU is the dying ReLU problem. A ReLU neuron is dead if it is stuck in the negative side and always outputs zero. It is also impossible for the neuron to recover back then.
 
 
 # Swish
@@ -64,19 +64,19 @@ Like ReLU, Swish is unbounded above and bounded below. Swish is smooth and nonmo
 2. For every batch size, swish outperforms ReLU.
 3. Non monocity property i.e for all x < 0, swish is neither decreasing nor increasing function.
 
-Now that we have completed understanding what Swish is let us move to Mish activation fucntion and see how it works!
+Now that we have completed understanding what Swish is let us move to Mish activation function and see how it works!
 
 # Mish
 
 Mish is also one of the recent activation networks and is given by the formula <img src="https://latex.codecogs.com/gif.latex?f(x) = x * \tanh(softplus(x))" /> where <img src="https://latex.codecogs.com/gif.latex?softplus(x) = \ln(1+ e^x)" />.	Most of the experiments suggest that Mish works better than ReLU, sigmoid and even Swish.
 
-The following is the graph of Mish activation fucntion.
+The following is the graph of Mish activation function.
 
 ![png](https://raw.githubusercontent.com/krutikabapat/krutikabapat.github.io/master/assets/Mish.png)
 
 Like both Swish and Relu, Mish is bounded below and unbounded above and the range is nearly [-0.31, <img src="https://latex.codecogs.com/gif.latex?\infty" />). 
 
-## Advantages of Mish:-
+## Advantages of Mish
 
 1. Being unbounded above is a desirable property for any activation function since it avoids saturation which generally causes training to drastically slow down due to near-zero gradients.
 
@@ -89,7 +89,7 @@ Like both Swish and Relu, Mish is bounded below and unbounded above and the rang
 The following table shows the summary of all the properties of Mish.  
 ![png](https://raw.githubusercontent.com/krutikabapat/krutikabapat.github.io/master/assets/Mish_prop.png)
 
-## Comparsion between Swish And Mish
+## Comparison between Swish And Mish
 
 The figure below shows the comparison between the derivatives of the activation functions Mish and Swish. We study the nature of the graphs and some results about them.  
 ![png](https://raw.githubusercontent.com/krutikabapat/krutikabapat.github.io/master/assets/mish_swish_com.png)
@@ -98,7 +98,7 @@ The figure below shows the comparison between the derivatives of the activation 
 
 ![png](https://raw.githubusercontent.com/krutikabapat/krutikabapat.github.io/master/assets/mish_noise.png)
 
-2. Test accuracy v/s optimzers for Mish and Swish show that there is less drop in accuracy in case of Mish than Swish.
+2. Test accuracy v/s optimizers for Mish and Swish show that there is less drop in accuracy in case of Mish than Swish.
 
 ![png](https://raw.githubusercontent.com/krutikabapat/krutikabapat.github.io/master/assets/Mish_optimiser.png)
 
@@ -114,7 +114,7 @@ The figure below shows the comparison between the derivatives of the activation 
 
 ![png](https://raw.githubusercontent.com/krutikabapat/krutikabapat.github.io/master/assets/Mish_width.png)
 
-6. The table below shows the test summary of mean acuuracy, mean loss and some other details abput Mish and Swish and Mish outperforms Swish in all of the parameters.
+6. The table below shows the test summary of mean accuracy, mean loss and some other details about Mish and Swish and Mish outperforms Swish in all of the parameters.
 
 ![png](https://raw.githubusercontent.com/krutikabapat/krutikabapat.github.io/master/assets/statistic.png)
 
